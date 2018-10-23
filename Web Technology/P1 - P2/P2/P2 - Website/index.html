@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webtek - P2 Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="top">
+        <h1>P2  Project Design </h1>
+        <hr />
+        <p> Jonathan Brooks, Nicolai Andre Dalaaker, Bram Goosink, Kristian Lindberg Mikalsen, Line Steen </p>
+        <p> 9 October 2018</p>
+    </header>
+    <div>
+        <h2>Table of Contents</h2>
+        <hr />
+        <ul>
+            <li> <a href="#admin">Administrative Details</a> </li>
+            <li> <a href="#purpose">Purpose, goals, and audience</a> </li>
+            <li> <a href="#nav">Navigation Structure</a> </li>
+            <li> <a href="#layout">Page Layout and Appearance</a> </li>
+            <li> <a href="#content">Content</a> </li>
+            <li> <a href="#req">Minimum Requirements</a> </li>
+            <li> <a href="#plan">Plan</a> </li>
+        </ul>
+    </div>
+    <div id="admin">
+        <h2>Administrative details</h2>
+        <hr />
+        <p>The European Partnership for Responsible Minerals (EPRM) is a multi stakeholder partnership that is aiming to improve the working and social conditions of those involved in the extraction and processing of 3TG minerals. The proposed case is to redesign their current <a href="https://europeanpartnership-responsibleminerals.eu/">website</a> to better communicate relevant information to viewers. Whilst the case is based on a real scenario, EPRM itself is not involved, and the produced deliverables will not be employed by the partnership. Instead, the case has been put forward by a group member, Bram Goosink, who is an ex-employee of the EPRM.</p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="purpose">
+        <h2>Purpose, goals, and audience</h2>
+        <hr />
+        <p>The EPRM is a multi stakeholder partnership that aims to create responsible imports of minerals used in electronics. The aim of the website is to provide those unfamiliar with the EPRM and the issues it is trying to tackle with a quick oversight of the organisation and its relevance. Besides this it aims to attract governments, companies and NGOs, both downstream and upstream, to join the partnership. The audience of the website is therefore very diverse, ranging from government officials to the average interested citizen. For simplicity the audience can be divided into three groups: benefactors, beneficiaries, and private individuals.</p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="nav">
+        <h2>Navigation Structure</h2>
+        <hr />
+        <p>In an attempt to keep navigation across the website as simple as possible, the website structure has been kept as simple as possible, dividing the information up into only four groups - about, projects, news and ‘get involved’. The resulting website navigation looks as follows.</p>
+        <img src="img/structure.png" alt="navigations structure">
+        <p><strong>About</strong> - Information concerning EPRM’s structure, purpose and members. One of the websites leading roles is to provide viewers that are not acquainted with the organisation with a quick informative summary about these topics, and so must be quickly available upon landing on the home page. Therefore the about page has the first position within the navigation bar, several larger elements on the home page also link to different anchors in about. This should make it as easy as possible for newcomers to find the about page.</p>
+        <p><strong>Projects</strong> - In order to provide further context on the operations of the EPRM and to provide evidence of its work and impact, all completed and ongoing projects are collected in one place in a portfolio type of setup.</p>
+        <p><strong>News</strong> - News is separated from projects in order to keep a clear overview of what is a permanent achievement by the EPRM, and what is simply noteworthy progress of the partnership or otherwise relevant information. The three most recent news items are displayed on the home page and together with a place in the navbar, news is easily accessed by viewers.</p>
+        <p><strong>Get Involved</strong> - Once having obtained enough background information about the EPRM the website acts as a way of acquiring members. The possibility of joining the partnership is therefore always highlighted by a call to action button in the nav bar. Upon clicking this button, viewers input whether they are an upstream or downstream firm and the appropriate web page is loaded with information relevant to their placement in the supply chain.</p>
+        <p>For further information navigation structure and design please visit the following link: <a href="https://lawsofux.com/">https://lawsofux.com/</a> </p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="layout">
+        <h2>Page Layout and Appearance</h2>
+        <hr />
+        <p>The universal styling and appearance has been applied to the home page mockup below in detail, and all other pages stem from this design. Following is a general guide to this house style, however individual elements of special significance may follow different patterns. Unless specified otherwise, fill colors will be black on light backgrounds and white on dark backgrounds.</p>
+        <pre><code CLASS=css>
+        <strong>h1</strong>:
+        Font Family: Open Sans
+        Font Style: Regular / Bold
+        (emphasis on important words with bold)
+        Font Size: 64px
+        Line Height: 87px
+        Align: Center
+
+        <strong>h2</strong>:
+        Font Family: Open Sans
+        Font Style: Regular / Bold
+        (emphasis on important words with bold)
+        Font Size: 36px
+        Line Height: 49px
+
+        <strong>h3</strong>:
+        Font Family: Raleway
+        Font Style: Bold
+        Font Size: 24px
+        Line Height: 28px
+        Letter Spacing: 10%
+
+        <strong>p</strong>:
+        Font Family: Open Sans
+        Font Style: Regular
+        Font Size: 18px
+        Line Height: 31px
+        <strong>or</strong>
+        Font Family: Raleway
+        Font Style: Medium
+        Font Size: 16px
+        Line Height: 25px
+        Align: Center
+
+        <strong>a</strong>:
+        Takes same styling as <strong>p</strong> with exception of
+        Color: #E74111
+
+        <strong>header.p</strong>:
+        Font Family: Raleway
+        Font Style: Medium
+        Font Size: 18px
+        Line Height: 21px
+        Align: Left
+        Letter Spacing: 10%
+        Text-transform: uppercase
+        </code></pre>
+        <p>The navbar will be placed at the top of the window with exception of the front page. When landing on the front page the first sight is a full screen video playing with a title in the centre. The nav bar will be located below this video and as the the viewer scrolls down it will move up the screen and stick to the top.</p>
+        <pre> <code>
+        <strong>footer</strong>:
+        Color: #C32323
+
+        <strong>footer.h1</strong>:
+        Font Family: Open Sans
+        Font Style: ExtraBold
+        Font Size: 20px
+        Line Height: 33px
+        Letter Spacing: 14%
+        Color: rgba(255, 255, 255, 0.34)
+
+        <strong>footer.p</strong>:
+        Font Family: Open Sans
+        Font Style: Regular
+        Font Size: 24px
+        Line Height: 39px
+        Color: #FFFFFF
+        </code> </pre>
+
+        <p>The footer display a newsletter button that uses JS script to change its state from a button to input text field upon hovering over with a mouse. There is also an image of the logo in the bottom right corner with dimensions approaching 590x370 and a degree of transparency.</p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="content">
+        <h2>Content</h2>
+        <hr />
+        <h3>The 'Home' page</h3>
+        <p>The home page starts with a fullscreen video of a mining operation. The clip will be max 15 seconds long and will be presented in the video format best suited to the client's browser. The video aims to captivate the attention of the viewer whilst also providing context as to the purpose of the EPRM.</p>
+        <p>Placed on top of the video is the caption ‘we make mining responsible’ that adds to the contextual awareness of the viewer. Right below it are two buttons for returning visitors leading to the portfolio page and a duplication of the call to action button - get involved.</p>
+        <p>A one liner below the video explains what the EPRM is and acts as an introduction to the three boxes below that each link to different components of the about page. The three boxes are linked by the law of common region and their similarity in design. Catchy symbols lead the viewer's eyes to the titles below them and a brief summary of what the title is about eventually leads to a link for more details.</p>
+        <p>An element dedicated to the most recent news items provides a quick overview of what the partnership has been doing without needing to leave the page. The placement of text and image alternate to provide greater aesthetic interest and a sense of better useability often referred to as the aesthetic useability affect.</p>
+        <p>A carousel at the bottom of the page provides an overview of the different partner companies and organisations. A carousel was chosen as it compresses more information into a smaller area, especially in comparison to simply listing the logos one after the other. The movement is also subtle enough to not distract the viewer yet remain in their periphery.</p>
+
+        <p><a class="imgLink" href="img/home.png">Home page mockup</a></p>
+
+        <h3>The 'About' page</h3>
+        <p>The about page has a banner on top introducing the page, as well as 4 navigational buttons. These buttons allow for swift navigation to the other sections of the page. The sections are divided in a similar method to flashcards, to not overwhelm viewers. The layout of the first section, ‘the learn about us’, closely mimics the news section of the front page, as this keeps the overall web page appear more cohesive. The font and colour scheme matches the overall theme of the website, using Open Sans and colour scheme, matching the theme of mining and overall keeping an uniform look over the webpage</p>
+        <p>The following section, ‘our purpose’ shows a condensed slide emphasising the purpose of the EPRM. </p>
+        <p>The structure of the EPRM section is interactive, and allows for the user to click on icons to have specific information about that part of the structure served. This prevents the user from being overwhelmed with text, as well as making the content presented more engaging. The background is coloured differently to emphasise different functionality.</p>
+        <p>The 4th section is the  ‘members of the EPRM’ infographic, which displays logos grouped according to category and location (provided by client), and allows for the user to swiftly navigate to their webpage by clicking on the icon. Javascript effects will be applied here.</p>
+
+        <p>
+            <a class="imgLink" href="img/about.png">About page mockup</a> <br/>
+            <a class="imgLink" href="img/about_structure1.png">About - regular member hover</a> <br/>
+            <a class="imgLink" href="img/about_structure2.png">About - strategic member hover</a> <br/>
+            <a class="imgLink" href="img/about_hover1.png">About - structure hover</a> <br/>
+            <a class="imgLink" href="img/about_hover2.png">About - structure hover 2</a>
+        </p>
+
+
+        <h3>the 'News' page</h3>
+        <p>This page will include a list of news articles by EPRM which expands into the entire article when clicked. On the top right there will be a calendar with highlighted dates according to the time of publishing per article. Below the calendar an image related to the selected article will be present and change as the user browses the different news articles. There will also be a button below the image allowing the user to subscribe to EPRM's newsletters, and below that a link to each newsletter itself.  </p>
+
+        <p>
+            <a class="imgLink" href="img/news_newsletter.png">Newspage showing newsletter button</a> <br/>
+            <a class="imgLink" href="img/news_email.png">Newspage showing email field</a> <br/>
+        </p>
+
+        <h3>The 'Projects' page</h3>
+        <p>This page will include a list of all current projects EPRM is involved in. On the top right there will be a map highlighting the corresponding continent to each project when selected. Below the map there will be an image related to each project as well. </p>
+
+        <p>
+            <a class="imgLink" href="img/projects.png">Projects page mockup</a>
+        </p>
+
+        <h3>The 'Calls for proposals', 'faq' and 'For Miners' pages</h3>
+        <p>These pages are all designed fairly similarly as the FAQ and For Miners pages are linked to from the calls for proposals page. In addition they all mostly contain text, so their layout will, for the most part, be similar. They are designed to be cohesive with the overall style of the page as described in section 5 (Page Layout and Appearance). They show a large image at the top, which should be big enough to fill the width of the page without the quality looking bad, while at the same time not using too much bandwidth. (A resolution close to 1024x680 should be sufficient). The text uses Open Sans font for headlines and Raleway for text. In addition to text, there are two levels of headlines, a clickable link to the FAQ and For Miners pages in the Calls for proposals page as well as an unordered (bulleted) list.</p>
+
+        <p>
+            <a class="imgLink" href="img/proposals.png">Calls for Proposals Mockup</a> <br/>
+            <a class="imgLink" href="img/faq.png">FAQ Mockup</a> <br/>
+            <a class="imgLink" href="img/miners.png">For Miners Mockup</a>
+        </p>
+
+        <h3>The 'Application/Membership' page</h3>
+        <p>The purpose of the application page is to present the different membership criterias simple and orderly manner, so that potential members can ge. The colour scheme and style will be equal to the homepage. The page contains some text that explains the purpose of the application site, and three bars the contain the different criterias. When you press one of the bars a box will show up beneath where the criteria for the selected application will show. If there is any information below the box, it will be pushed down.</p>
+        <p>
+            <a class="imgLink" href="img/application_nobar.png">Application page with no bars open</a> <br/>
+            <a class="imgLink" href="img/application_onebar.png">Application page with one bar open</a> <br/>
+            <a class="imgLink" href="img/choose.png">Chose whether you're in mining or industry mockup</a>
+        </p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="req">
+        <h2>Minimum Requirements</h2>
+        <hr />
+        <p>Javascript requirements for various pages: </p>
+        <h3>The 'Home' page</h3>
+        <ul>
+            <li>An image carousel with partner logos. The user should be able to scroll through logos for all the partners. The animation will shift the current logos out of view while new ones scroll in from the side.</li>
+            <li>The navigation bar will appear below the video and more to the top of the screen where sticks as the user scrolls down.</li>
+        </ul>
+        <h3>The 'About' page</h3>
+        <ul>
+            <li>When one of the buttons are pressed, the new information will be slided like a image slide below. A visual confirmation will be shown in the form of radio buttons on the button. </li>
+            <li>When one of the headers (e.g ‘Strategic members’) is clicked or hovered over, the background for each icon in that group will start to glow. Similar effects will happen if the user just hover over one icon in that group. </li>
+        </ul>
+        <h3>The 'Get Involved' page</h3>
+        <ul>
+            <li>When you press the “Get Involved” button in the header (can be done on all of the pages), there will be an animation that presents two buttons on screen.</li>
+            <li>Blurring out the opposite button when one is being hovered over.
+                Both buttons will be blurred when none are hovered over</li>
+            <li>For the application screen: When you press one of the bars a menu will drop down below the bar element, if there are any other bars under they will be pushed down</li>
+        </ul>
+        <h3>The 'News' page</h3>
+        <ul>
+            <li>Colouring the corresponding date on a calendar when an article is selected</li>
+            <li>Newsletters button should morph into an input bar for the user’s e-mail when hovered over/selected</li>
+        </ul>
+        <h3>The 'Projects' page</h3>
+        <ul>
+            <li>Colouring the corresponding continent on a map when an article is selected</li>
+        </ul>
+
+        <h3>'Projects' and 'News' pages</h3>
+        <ul>
+            <li>An image that shifts into different images corresponding to the selected article</li>
+        </ul>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="plan">
+        <h2>Plan</h2>
+        <hr />
+        <p> <strong>Final Deadlines:</strong> P3 and P4, 11/11, 23:59 </p>
+        <h3>Project tasks/sections to complete</h3>
+        <ul>
+            <li> <strong>Overall CSS</strong>: <ul>
+                <li> <strong>Responsible</strong>: Bram</li>
+                <li> <strong>Deadline</strong>: 21/10</li>
+            </ul> </li>
+
+            <li> <strong>Navigation bar</strong>: <ul>
+                <li> <strong>Responsible</strong>: Jonathan</li>
+                <li> <strong>Deadline</strong>: 27/10</li>
+                <li>JS animation when you press the “Get Involved” button, to choose who you are</li>
+            </ul> </li>
+
+            <li> <strong>Footer</strong>: <ul>
+                <li> <strong>Responsible</strong>: Nicolai</li>
+                <li> <strong>Deadline</strong>: 27/10</li>
+            </ul> </li>
+
+            <li> <strong>index.html</strong>: <ul>
+                <li> <strong>Responsible</strong>: Bram</li>
+                <li> <strong>Deadline</strong>: 28/10</li>
+                <li>Local CSS</li>
+                <li>Video and formats</li>
+                <li>Icons and about boxes</li>
+                <li>News items positioning, linking and images</li>
+                <li>Logo carousel</li>
+            </ul> </li>
+
+            <li> <strong>About.html</strong>: <ul>
+                <li> <strong>Responsible</strong>: Nicolai</li>
+                <li> <strong>Deadline</strong>: 28/10</li>
+                <li>Local CSS</li>
+                <li>Banner image</li>
+                <li>Navigational buttons with icons</li>
+                <li>Images for ceach section</li>
+                <li>Icons and buttons for interactive display for structure</li>
+                <li>Icons for member infographic</li>
+                <li>Interactive effects for member infographic (highlight groups of members)</li>
+                <li>Written content for page (remove lorem ipsum)</li>
+            </ul> </li>
+
+            <li> <strong>CallsForProposals.html, Faq.html, ForMiners.html</strong>: <ul>
+                <li> <strong>Responsible</strong>: Kristian</li>
+                <li> <strong>Deadline</strong>: 28/10</li>
+                <li>Local CSS</li>
+                <li>Banner images</li>
+                <li>Buttons to FAQ and For Miners page</li>
+            </ul> </li>
+
+            <li> <strong>Application.html</strong>: <ul>
+                <li> <strong>Responsible</strong>: Jonathan</li>
+                <li> <strong>Deadline</strong>: 26/10</li>
+            </ul> </li>
+
+            <li> <strong>News.html, Projects.html</strong>: <ul>
+                <li> <strong>Responsible</strong>: Line</li>
+                <li> <strong>Deadline</strong>: 28/10</li>
+                <li>Local CSS</li>
+                <li>Articles menu</li>
+                <li>Image for every news/project article</li>
+                <li>Calendar and map</li>
+                <li>Newsletters button</li>
+            </ul> </li>
+        </ul>
+        <h3>Project Structure</h3>
+        <ul>
+            <li> <strong>Project folder</strong>
+                <ul>
+                <li><strong>CSS</strong><ul>
+                    <li>mainStyle.css</li>
+                </ul> </li>
+                <li><strong>img</strong> <ul>
+                    <li><strong>Icons</strong> <ul>
+                        <li>Member Companies</li>
+                        <li>Button Icons</li>
+                    </ul> </li>
+                    <li><strong>Banners</strong> <ul>
+                        <li>Banner images for CallsForProposals, Faq and ForMiners pages</li>
+                    </ul> </li>
+                </ul> </li>
+                <li><strong>Video</strong> <ul>
+                    <li>Home page video</li>
+                </ul> </li>
+                <li><strong>js</strong> <ul>
+                    <li>Header.js</li>
+                    <li>Footer.js</li>
+                    <li>Anomations.js</li>
+                </ul> </li>
+                <li>index.html</li>
+                <li>About.html</li>
+                <li>CallsForProposals.html</li>
+                <li>Faq.html</li>
+                <li>ForMiners.html</li>
+                <li>Application.html</li>
+                <li>News.html</li>
+                <li>Projects.html</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#top">back to top</a>
+    </div>
+</body>
+
+</html>
