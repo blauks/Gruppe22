@@ -57,14 +57,17 @@ a:hover {
 }
 
 .bannerBlurry{
-    width:200%;
-    height:200%;
+    width:100vw;
+    height:40vh;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -34vh;
+    left: -20vw;
     background-image: url('../img/bannerCfp.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center center;
     z-index: 0;
-    filter:blur(10px) brightness(1.3) grayscale(50%);
+    filter:blur(10px);
 }
 .bannerText {
     z-index: 1;
