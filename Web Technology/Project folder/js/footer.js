@@ -1,8 +1,11 @@
+
+
+//ads footer on run
 makeFooter();
 
-
-//initializing variables
+//adds a footer div to the body of the document
 function makeFooter(){
+  //initializing variables
   let footer = document.createElement("div");
   let footerLeft= document.createElement("div");
   let footerRight = document.createElement("div");
@@ -25,9 +28,11 @@ function makeFooter(){
 
   contactInfoHeader.style.cssText="opacity:0.33;";
   findUsHereHeader.style.cssText="opacity:0.33;";
-  //asigns positions for the footerLeft, footerRight divs and logImg in an horizontal manner
+  //asigns positions for the footerLeft footerRight divs in an horizontal manner
   footerLeft.style.cssText="float: left; margin-left:10%";
   footerRight.style.cssText="float:left; position:relative; left:10%;";
+
+  //puts logoImg in the bottom right of the footer
   logoImg.style.cssText="position:absolute; bottom:0; right:0; height:150px";
 
   //appends textelements to right and left footer div
