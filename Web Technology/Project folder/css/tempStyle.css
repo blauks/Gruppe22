@@ -22,11 +22,12 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     line-height: 49px;
+    font-weight: 400;
 }
 
 h3 {
     font-family: 'Raleway';
-    font-weight:500;
+    font-weight:400;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 10%;
@@ -49,12 +50,16 @@ a:hover {
 .bannerImg {
     width:100vw;
     height:40vh;
-    background-image:url('../img/bannerCfp.jpg');
+    /* background-image:url('../img/bannerCfp.jpg'); */
     background-repeat:no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     position:relative;
 }
+
+.faqBanner { background-image:url('../img/bannerFaq.jpg'); }
+.cfpBanner { background-image:url('../img/bannerCfp.jpg'); }
+.fmBanner { background-image:url('../img/bannerFm.jpg'); }
 
 .bannerBlurry{
     width:100vw;
@@ -62,10 +67,10 @@ a:hover {
     position: absolute;
     top: -34vh;
     left: -20vw;
-    background-image: url('../img/bannerCfp.jpg');
+    /* background-image: url('../img/bannerCfp.jpg'); */
     background-repeat:no-repeat;
     background-size: cover;
-    background-position:center center;
+    background-position:center;
     z-index: 0;
     filter:blur(10px);
 }
