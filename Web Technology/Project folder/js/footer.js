@@ -45,7 +45,7 @@ function makeFooter(){
   //appends the fright and left footer div to the footer
   footer.appendChild(footerLeft);
   footer.appendChild(footerRight);
-  footer.appendChild(logoImg); // image not visible
+  footer.appendChild(logoImg);
   document.body.appendChild(footer);
   }
   //todo :  TODO implement image, General positioning, add button
