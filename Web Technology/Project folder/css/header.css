@@ -1,0 +1,65 @@
+body {
+    position: relative;
+    z-index: 1;
+}
+
+#head{
+    background-color: #DCD9D9;
+    height: 100px;
+    margin: -8px;
+}
+
+#headerLogo{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    height: 34px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#allHeaderButtons{
+    position: absolute;
+    right: 31px;
+    top: 31px;
+}
+
+#aboutButton, #projectsButton, #newsButton{
+    position: relative;
+    left: -5px;
+}
+
+.buttons {
+    font-family: 'Raleway', sans-serif;
+    font-style: ExtraBold;
+    font-size: 18px;
+    line-height:33px;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    background-color:  #DCD9D9;
+    border: 0;
+    color: black;
+}
+
+
+.buttons:hover{
+    background-color: darkgray;
+}
+
+#getInvolvedButton{
+    background-color: white;
+}
+
+#getInvolvedButton:hover{
+    background-color: darkgray;
+}
+
+#transparentBackground{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
