@@ -1,4 +1,5 @@
 //remember to add an empty div with ID=head at the top of the HTML document
+//not finished
 
 function getInvolvedAnimation(){
     document.body.appendChild(transparentBackground);
