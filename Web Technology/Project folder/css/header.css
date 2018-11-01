@@ -8,16 +8,15 @@
     #allHeaderButtons{
         position: absolute;
         left: 0px;
-        top: 40px;
+        top: 50px;
     }
 
     #headerLogo{
         position: absolute;
         top: 1px;
-        left: 1px;
-        height: 34px;
-        width: 200px;
-        border: 1px solid black;
+        left: 25%;
+        height: 50px;
+        width: 150px;
     }
 }
 
@@ -29,20 +28,18 @@
     }
     #headerLogo{
         position: absolute;
-        top: 32px;
-        left: 32px;
-        height: 34px;
+        top: 10px;
+        left: 10px;
+        height: 80px;
         width: 200px;
-        border: 1px solid black;
     }
 }
 
 .buttons {
-    font-family: 'Raleway', sans-serif;
-    font-style: ExtraBold;
+    font-family: 'Raleway', sans-serif; 
     font-size: 18px;
     line-height: 33px;
-    letter-spacing: 10%;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     background-color:  #DCD9D9;
     border: 0;
@@ -76,25 +73,26 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#clickBoxDiv{
+
+ #clickBox1, #clickBox2{
     position: fixed;
-    width: 25%;
+    width: 20%;
 }
 
-#clickBoxDiv:after{
+ #clickBox1::after, #clickBox2::after{
     content: "";
     display: block;
-    padding-bottom: 100%;
-}
+    padding-bottom: 170%;
+} 
 
-#clickBox1{
+#whoAreYou{
     position: relative;
-    border: 1px black;
-    height: 100%;
-    width: 50%;
-    background-color: black;
-}
+    text-align: center;
+    top: 110px;
+    padding: 15px;
+    font-size: 40px;
+    width: 35%;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.7);
 
-#clickBox2{
-    
 }

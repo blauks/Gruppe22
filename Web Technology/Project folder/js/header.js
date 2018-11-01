@@ -2,31 +2,57 @@
 
 function getInvolvedAnimation(){
     document.body.appendChild(transparentBackground);
-    clickBox1.style.margin = "0px 37.5%";
+    clickBox1.style.margin = "0px 30%";
+    clickBox2.style.margin = "0px 50%";
     transparentBackground.setAttribute("id", "transparentBackground");
     let x = 1;
+    let stage = 0;
     let moveBox = setInterval(moveBoxFunc, 10);
     function moveBoxFunc(){
-        clickBoxDiv.style.margin = x + "px 37.5%";
-        x = x*1.1;
-        if(x > 195){
-            clearInterval(moveBox);
+        if(stage == 0){
+            x = x*1.08;
+            if(x >= 195){
+                stage = 1;
+            }
+        }
+        
+        else if(stage == 1){
+            x = x - x*0.007;
+            if(x < 170){
+                stage = 2;
+            }
+        }
+
+        else {
+            x = x*1.0035;
+            if(x >= 195){
+                transparentBackground.appendChild(whoAreYou);
+                clearInterval(moveBox);
+            }
+        }
+
+        clickBox1.style.margin = x + "px 30%";
+        clickBox2.style.margin = x + "px 50%";
         }
     }
-    }
+
 
 //For animation of the get involved button
 const transparentBackground = document.createElement("div");
 const clickBox1 = document.createElement("img");
 const clickBox2 = document.createElement("img");
-const clickBoxDiv = document.createElement("div");
-clickBoxDiv.appendChild(clickBox1);
-clickBoxDiv.appendChild(clickBox2);
-transparentBackground.appendChild(clickBoxDiv);
+const whoAreYou = document.createElement("p");
+transparentBackground.appendChild(clickBox1);
+transparentBackground.appendChild(clickBox2);
 
 clickBox1.setAttribute("id","clickBox1");
 clickBox2.setAttribute("id","clickBox2");
-clickBoxDiv.setAttribute("id","clickBoxDiv")
+
+clickBox1.setAttribute("src","img/bannerFm.jpg");
+clickBox2.setAttribute("src","img/bannerFaq.jpg");
+
+whoAreYou.setAttribute("id","whoAreYou");
+whoAreYou.appendChild(document.createTextNode("Which of these describes you best?"));
 
 //For navbar
 const logo = document.createElement("img")
@@ -47,6 +73,7 @@ news.setAttribute("id", "newsButton");
 getInvolved.setAttribute("id", "getInvolvedButton");
 
 logo.setAttribute("Alt","logo");
+logo.setAttribute("src","img/colourLogoEPRMb.png")
 logo.setAttribute("id", "headerLogo");
 
 const buttonList = [about,projects,news,getInvolved]
