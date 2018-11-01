@@ -1,39 +1,47 @@
-body {
-    position: relative;
-    z-index: 1;
-}
-
 #head{
     background-color: #DCD9D9;
     height: 100px;
-    margin: -8px;
+    width: 100%;
 }
 
-#headerLogo{
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    height: 34px;
-    width: 200px;
-    border: 1px solid black;
+@media all and (max-width: 680px){
+    #allHeaderButtons{
+        position: absolute;
+        left: 0px;
+        top: 40px;
+    }
+
+    #headerLogo{
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        height: 34px;
+        width: 200px;
+        border: 1px solid black;
+    }
 }
 
-#allHeaderButtons{
-    position: absolute;
-    right: 31px;
-    top: 31px;
-}
-
-#aboutButton, #projectsButton, #newsButton{
-    position: relative;
-    left: -5px;
+@media all and (min-width: 681px){
+    #allHeaderButtons{
+        position: absolute;
+        right: 31px;
+        top: 31px;
+    }
+    #headerLogo{
+        position: absolute;
+        top: 32px;
+        left: 32px;
+        height: 34px;
+        width: 200px;
+        border: 1px solid black;
+    }
 }
 
 .buttons {
     font-family: 'Raleway', sans-serif;
     font-style: ExtraBold;
     font-size: 18px;
-    line-height:33px;
+    line-height: 33px;
     letter-spacing: 10%;
     text-transform: uppercase;
     background-color:  #DCD9D9;
@@ -41,8 +49,16 @@ body {
     color: black;
 }
 
+@media all and (max-width: 400px){
+    .buttons{
+        font-size: 15px;
+    }
+    #allHeaderButtons{
+        top: 50px;
+    }
+}
 
-.buttons:hover{
+.buttons:hover, #getInvolvedButton:hover{
     background-color: darkgray;
 }
 
@@ -50,15 +66,11 @@ body {
     background-color: white;
 }
 
-#getInvolvedButton:hover{
-    background-color: darkgray;
-}
-
 #transparentBackground{
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0px;
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);

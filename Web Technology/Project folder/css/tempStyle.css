@@ -140,3 +140,7 @@ a:hover {
     font-size:1.8em;
     font-family: 'Open Sans', sans-serif;
 }
+
+#applicationIntro{
+    text-align: center;
+}
