@@ -7,7 +7,7 @@ html, body{
 }
 
 header {
-    width:100vw;
+    /* width:100vw; */
     height:5vh;
     background-color: #DCD9D9;
 }
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .bannerImg {
-    width:100vw;
+    /* width:100vw; */
     height:40vh;
     /* background-image:url('../img/bannerCfp.jpg'); */
     background-repeat:no-repeat;
