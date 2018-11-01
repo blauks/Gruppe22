@@ -49,7 +49,7 @@
     color: black;
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 401px){
     .buttons{
         font-size: 15px;
     }
@@ -74,4 +74,27 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+#clickBoxDiv{
+    position: fixed;
+    width: 25%;
+}
+
+#clickBoxDiv:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+#clickBox1{
+    position: relative;
+    border: 1px black;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+
+#clickBox2{
+    
 }
