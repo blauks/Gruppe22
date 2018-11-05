@@ -141,6 +141,14 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-#applicationIntro{
+#applicationPage{
     text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.criteria{
+    height: 60px;
+    width: 100%;
+    background-color: gray;
 }

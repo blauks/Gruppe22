@@ -31,6 +31,8 @@ function getInvolvedAnimation(){
             }
         }
 
+        
+
         clickBox1.style.margin = x + "px 30%";
         clickBox2.style.margin = x + "px 50%";
         }
@@ -73,7 +75,7 @@ news.setAttribute("id", "newsButton");
 getInvolved.setAttribute("id", "getInvolvedButton");
 
 logo.setAttribute("Alt","logo");
-logo.setAttribute("src","img/colourLogoEPRMb.png")
+logo.setAttribute("src","img/colourLogoEPRM.png")
 logo.setAttribute("id", "headerLogo");
 
 const buttonList = [about,projects,news,getInvolved]
