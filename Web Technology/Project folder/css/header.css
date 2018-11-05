@@ -4,16 +4,16 @@
     width: 100%;
 }
 
-    .buttons {
-        font-family: 'Raleway', sans-serif; 
-        font-size: 18px;
-        line-height: 33px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        background-color:  #DCD9D9;
-        border: 0;
-        color: black;
-    }
+.buttons {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color:  #DCD9D9;
+    border: 0;
+    color: black;
+}
 
 @media all and (max-width: 432px){
     .buttons{
@@ -46,7 +46,7 @@
     #whoAreYou{
         position: relative;
         text-align: center;
-        top: 100px;
+        top: 25px;
         left: 32%;
         padding: 0.5%;
         font-size: 3.5vw;
@@ -74,7 +74,7 @@
     #whoAreYou{
         position: relative;
         text-align: center;
-        top: 112px;
+        top: 12px;
         left: 32%;
         padding: 0.5%;
         font-size: 2vw;
@@ -103,11 +103,17 @@
 
  #clickBox1, #clickBox2{
     position: fixed;
-    width: 20%;
+    height: 38vw;
+    filter: grayscale(100%);
+    transition: filter 1s;
+    transition: height 0.5s;
 }
 
- #clickBox1::after, #clickBox2::after{
-    content: "";
-    display: block;
-    padding-bottom: 170%;
-} 
+#clickBox1:hover, #clickBox2:hover{
+    transition: filter 1s;
+    transition: height 0.5s;
+    height: 39vw;
+    filter: grayscale(0);
+}
+
+

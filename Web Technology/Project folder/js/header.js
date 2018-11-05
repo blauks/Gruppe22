@@ -3,7 +3,7 @@
 function getInvolvedAnimation(){
     document.body.appendChild(transparentBackground);
     clickBox1.style.margin = "0px 30%";
-    clickBox2.style.margin = "0px 50%";
+    clickBox2.style.margin = "0px 50.5%";
     transparentBackground.setAttribute("id", "transparentBackground");
     let x = 1;
     let stage = 0;
@@ -11,30 +11,30 @@ function getInvolvedAnimation(){
     function moveBoxFunc(){
         if(stage == 0){
             x = x*1.08;
-            if(x >= 195){
+            if(x >= 95){
                 stage = 1;
             }
         }
         
         else if(stage == 1){
             x = x - x*0.007;
-            if(x < 170){
+            if(x < 70){
                 stage = 2;
             }
         }
 
         else {
             x = x*1.0035;
-            if(x >= 195){
+            if(x >= 95){
                 transparentBackground.appendChild(whoAreYou);
                 clearInterval(moveBox);
             }
         }
 
-        
+
 
         clickBox1.style.margin = x + "px 30%";
-        clickBox2.style.margin = x + "px 50%";
+        clickBox2.style.margin = x + "px 50.5%";
         }
     }
 
@@ -50,11 +50,15 @@ transparentBackground.appendChild(clickBox2);
 clickBox1.setAttribute("id","clickBox1");
 clickBox2.setAttribute("id","clickBox2");
 
-clickBox1.setAttribute("src","img/bannerFm.jpg");
-clickBox2.setAttribute("src","img/bannerFaq.jpg");
+clickBox1.setAttribute("src","img/upstream.jpg");
+clickBox2.setAttribute("src","img/downstream.jpg");
 
 whoAreYou.setAttribute("id","whoAreYou");
 whoAreYou.appendChild(document.createTextNode("Which of these describes you best?"));
+
+clickBox1.setAttribute("onclick","location.href='application.html'");
+clickBox2.setAttribute("onclick","location.href='CallsForProposals.html'")
+
 
 //For navbar
 const logo = document.createElement("img")
@@ -68,6 +72,10 @@ projects.setAttribute("class", "buttons");
 news.setAttribute("class", "buttons");
 getInvolved.setAttribute("class", "buttons");
 getInvolved.setAttribute("onClick","getInvolvedAnimation()");
+
+about.setAttribute("onclick","location.href='about.html'");
+//projects.setAttribute("onclick","location.href='projects.html'")
+//news.setAttribute("onclick","location.href='news.html'")
 
 about.setAttribute("id","aboutButton");
 projects.setAttribute("id", "projectsButton");
