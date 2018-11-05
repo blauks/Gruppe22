@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,500');
+
+body{
+	font-family: Open Sans, Verdana, sans-serif;
+}
+
+h1{
+	font-Family: Open Sans, Verdana, sans-serif;
+	font-Style: normal; /*(emphasis on important words with bold) */
+	font-Size: 64px;
+	line-Height: 87px;
+	text-align: center;
+}
+ 
+h2{
+	font-Family: Open Sans, Verdana, sans-serif;
+	font-Style: normal; /*(emphasis on important words with bold) */
+	font-Size: 36px;
+	line-Height: 49px;
+}
+	
+h3{
+	font-Family: Raleway, Verdana, sans-serif;
+	font-style: normal;
+	font-Size: 24px;
+	line-Height: 28px;
+	letter-Spacing: 10%;
+}
+
+p{
+	font-family: Open Sans, Verdana, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	line-Height: 31px;
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#projects {
+	position: absolute;
+	top: 5%;
+	left: 2%;
+	overflow: auto;
+	height: 80%;
+	width: 65%;
+}
+
+#projects li {border-bottom: solid 2px #DCD9D9;}
+
+#projects p {display: none;}
+
+.content {display: none;}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+@media screen and (max-width: 1340px){
+	 #righthandside {
+		 display: none;
+	 }
+	 #projects{
+		 width: 95%;
+	 }
+}
+
+#righthandside{
+	position: absolute;
+	top: 5%;
+	left: 70%;
+	right: 2%;
+}
+
+#map {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#projectImage {
+	width: 100%;
+	margin-bottom: 20px;
+}

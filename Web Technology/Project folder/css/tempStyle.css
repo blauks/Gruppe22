@@ -141,6 +141,154 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* News CSS */
+.articleList{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#newsarticles {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	overflow: scroll;
+	height: 85%;
+	width: 47%;
+}
+
+#newsarticles li {border-bottom: solid 2px #DCD9D9;}
+
+#newsarticles div {display: none;}
+
+.newsContent {display: none;}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#righthandside{
+	position: absolute;
+	top: 5%;
+	left: 62%;
+	right: 10%;
+}
+
+@media screen and (max-width: 1340px){
+	 #righthandside {
+		 display: none;
+	 }
+	 #newsarticles{
+		 width: 95%;
+	 }
+}
+
+#newsimage {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#calendar {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+#subscribe{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background: #C32323;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	Font-Size: 20px;
+	Line-Height: 28px;
+	Letter-Spacing: 2px;
+	 -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+#subscribe:hover{
+	width: 0%;
+}
+
+#email{
+	width: 100%;
+	height: 50px;
+	color: Black;
+	text-align: center;
+	padding: 10px;
+	Font-Size: 22px;
+	Line-Height: 28px;
+	Letter-Spacing: 2px;
+}
+
+.month{
+	padding: 0px;
+	width: 100%;
+    background: #C32323;
+    text-align: center;
+}
+
+.month ul{
+	margin: 0;
+	padding: 20px 25px;
+}
+
+.month ul li{
+	color: White;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.month .prev{
+	float: left;
+	padding-top: 10px;
+}
+
+.month .next{
+	float: right;
+	padding-top: 10px;
+}
+
+.weekdays{
+	text-align: center;
+	margin: 0;
+	padding: 10px 3px;
+	background-color: #ddd;
+}
+
+.weekdays li{
+	display: inline-block;
+	width: 12%;
+	color: #666;
+}
+
+.days{
+	padding: 10px 0 0 10px; 
+	background: #eee;
+	margin: 0;
+}
+
+.days li{
+	display: inline-block;
+	width: 12%;
+	text-align: center;
+	margin-bottom: 3px;
+	font-size: 12px;
+	color: #777;
+}
+
+.days li .active{
+	padding: 5px;
+	background: #C32323;
+    color: white;
+}
+
+/* Projects CSS */
+
 
 footer {
     width:100vw;
