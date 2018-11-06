@@ -28,7 +28,6 @@ function makeFooter(){
 
   //assignts style to footer
   footer.classList.add("footer");
-
   contactInfoHeader.style.cssText="opacity:0.33;";
   findUsHereHeader.style.cssText="opacity:0.33;";
   //asigns positions for the footerLeft footerRight divs in an horizontal manner
@@ -38,7 +37,7 @@ function makeFooter(){
   //appends textelements to right and left footer div
   footerLeft.appendChild(findUsHereHeader);
   footerLeft.appendChild(findUsHere);
-//append button to footerLeft here!!!!
+  //append button to footerLeft here!!!!
   footerRight.appendChild(contactInfoHeader);
   footerRight.appendChild(contactInfo)
 
@@ -48,4 +47,4 @@ function makeFooter(){
   footer.appendChild(logoImg);
   document.body.appendChild(footer);
   }
-  //todo :  TODO implement image, General positioning, add button
+  //todo :  TODO add button

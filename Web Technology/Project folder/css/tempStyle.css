@@ -33,7 +33,7 @@ h3 {
     letter-spacing: 10%;
 }
 
-p{
+p, ul{
     font-family: 'Raleway';
     font-size: 16px;
     line-height: 25px;
@@ -57,6 +57,7 @@ a:hover {
     position:relative;
 }
 
+.aboutBanner {background-image:url("../img/bannerAbout.jpg");}
 .faqBanner { background-image:url('../img/bannerFaq.jpg'); }
 .cfpBanner { background-image:url('../img/bannerCfp.jpg'); }
 .fmBanner { background-image:url('../img/bannerFm.jpg'); }
@@ -139,6 +140,13 @@ a:hover {
     color:#02a19c;
     font-size:1.8em;
     font-family: 'Open Sans', sans-serif;
+}
+
+
+#applicationPage{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
 }
 
 /* News CSS */
@@ -381,4 +389,5 @@ footer {
     width:100vw;
     height:20vh;
     background-color: #C32323;
+
 }

@@ -1,0 +1,134 @@
+
+ .aboutBanner{
+  text-align: center;
+  color:white;
+}
+
+.aboutContainer{
+  width:100%;
+}
+
+#buttonBarContainer{
+  height:250px;
+  background-color:#FFFFFF;
+  color:black;
+}
+#buttonBar{
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 70%; margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+#buttonBar a {
+      color:black;
+}
+#buttonBar a:hover{
+  color:grey;
+}
+
+#buttonBar div{
+  float:left;
+  width:25%;
+}
+
+#aboutUsContainer{
+  background-color:#E5E5E5;
+  height:100%;
+  overflow:auto;
+}
+#aboutUs{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+#WhyEPRM,#howEPRMWork, #OurObjectives{
+  margin-left: auto;
+  margin-right: auto;
+  height: 100;
+  width: 100%; margin: 0 auto;
+  position:relative;
+  overflow:auto;
+}
+
+.aboutUsText{
+  overflow:auto;
+  float:left;
+  width: 50%;
+  height:100%;
+  text-align: left;
+}
+.aboutUsImg{
+  position:relative;
+  float:left;
+  width:50%;
+  height:100%;
+}
+.aboutUsImg img{
+  position:relative;
+  top:20%;
+  left:10%;
+  width:80%;
+  height:80%;
+}
+
+#ourPurposeContainer{
+  overflow:auto;
+  background-color: #FFFFFF;
+  height:100%;
+}
+#ourPurpose{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+#ourStructureContainer{
+  overflow:auto;
+  height:100%;
+  background-color:#E5E5E5;
+}
+#ourStructure{
+  background-color:#56CCF2;
+  overflow:auto;
+  width:100%;
+  height:100%;
+}
+#ourStructureControll{
+  margin-left:auto;
+  margin-right:auto;
+
+  width:80%;
+  text-align: center;
+  overflow:auto;
+}
+#ourStructureControll .structureButtonBar{
+  overflow:auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 70%; margin: 0 auto;
+}
+.structureButton{
+  position:relative;
+  float:left;
+  width:25%;
+}
+#ourStructureDisplay{
+  overflow:auto;
+  text-align:center;
+}
+
+#ourMembersContainer{
+  overflow:auto;
+  background-color:green;
+}
+#ourMembers{
+  text-align:center;
+  width:80%;
+  background-color:orange;
+  margin-left:auto;
+  margin-right:auto;
+}
