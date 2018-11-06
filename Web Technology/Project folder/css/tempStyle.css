@@ -143,12 +143,6 @@ a:hover {
 }
 
 
-#applicationPage{
-    text-align: center;
-    width: 80%;
-    margin: 10px auto;
-}
-
 /* News CSS */
 #newsWrapper{
 	box-sizing: border-box;
