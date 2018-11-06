@@ -142,10 +142,13 @@ a:hover {
 }
 
 /* News CSS */
+
+.newsBanner { background-image:url('../img/NewsImages/newsBanner.jpg'); }
+
 #newsWrapper{
 	box-sizing: border-box;
 	position: relative;
-	min-height: 90vh;
+	min-height: 100vh;
 }
 
 .articleList{
@@ -191,9 +194,15 @@ a:hover {
 	 }
 }
 
-#rightimage {
+#articleImages>img {
+	display: none;
+	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
+}
+
+#articleImages .activeImage{
+	display: block;
 }
 
 #calendar {
@@ -316,6 +325,12 @@ a:hover {
 	background: #C32323;
     color: white;
 }
+
+/*Projects CSS*/
+
+.projectsBanner { background-image:url('../img/ProjectImages/projectsBanner.jpg'); }
+
+#map{width:100%;}
 
 footer {
     width:100vw;
