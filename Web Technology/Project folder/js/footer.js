@@ -16,23 +16,23 @@ function makeFooter(){
   //assigns content to the text elements
   findUsHereHeader.innerHTML="FIND US HERE";
   contactInfoHeader.innerHTML="STAY IN TOUCH";
+  footerRight.classList.add("footerRight");
+  footerLeft.classList.add("footerLeft");
   findUsHere.innerHTML = "Prinses Beatrixlaan 2<br />2595 AL The Hague<br/>The Netherlands";
   contactInfo.innerHTML = "<a href=\"mailto:eksampleEmail@notTheActualEPRMEmail.com\" style=color:white>eprm@rvo.nl</a><br/>+31 703 798 000";
 
   //addding path to ..img/footerLogo.png image
   logoImg.src = "img/footerLogo.png";
-  //assignts style to footer
-  footer.style.cssText = "position:fixed; bottom:10px; height: 150px; background-color:#C32323; color:white; font-family:\"Open Sans\"; position:relative; ";
 
+
+  //assignts style to footer
+  footer.classList.add("footer");
   contactInfoHeader.style.cssText="opacity:0.33;";
   findUsHereHeader.style.cssText="opacity:0.33;";
   //asigns positions for the footerLeft footerRight divs in an horizontal manner
-  footerLeft.style.cssText="float:left; position:relative; margin-left:10%; z-index:2;";
-  footerRight.style.cssText="float:left; position:relative; left:10%; z-index:2;";
 
   //puts logoImg in the bottom right of the footer
-  logoImg.style.cssText="position:absolute; bottom:0px; right:0px; height:150px; z-index:1; opacity:0.5;";
-
+  logoImg.classList.add("footerImg")
   //appends textelements to right and left footer div
   footerLeft.appendChild(findUsHereHeader);
   footerLeft.appendChild(findUsHere);

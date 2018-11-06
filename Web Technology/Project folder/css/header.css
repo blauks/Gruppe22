@@ -1,7 +1,8 @@
 #head{
-    background-color: #DCD9D9;
+    background-color: white;
     height: 100px;
     width: 100%;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -11,40 +12,52 @@
     line-height: 33px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    background-color:  #DCD9D9;
+    background-color: white;
     border: 0;
     color: black;
 }
 
-@media all and (max-width: 432px){
-    .buttons{
-        font-size: 13px;
-    }
-    #allHeaderButtons{
-        top: 50px;
-    }
-}
-
-
-@media all and (max-width: 680px){
+@media all and (max-width: 919px){    
     #allHeaderButtons{
         position: absolute;
-        left: 0px;
-
+        left: 50%;
         top: 50px;
+        transform: translate(-50%, 0);
+    }
+
+    @media all and (max-width: 440px){
+        .buttons{
+            font-size: 13px;
+        }
+        #allHeaderButtons{
+            width: 330px;
+        }
+    }
+
+    @media all and (min-width:441px){
+        .buttons{
+            font-size: 15x;
+        }
+
+        #allHeaderButtons{
+            width: 428px;
+        }
     }
 
     .buttons{
-        font-size: 15x;
+        margin: 0;
     }
 
-    #headerLogo{
+    #headerLogoRight{
+        display: none;
+    }
+
+    #headerLogoLeft{
         position: absolute;
         top: 1px;
-
-        left: 25%;
+        left: 50%;
+        transform: translate(-50%, 0);
         height: 50px;
-        width: 150px;
     }
     #whoAreYou{
         position: relative;
@@ -59,19 +72,29 @@
     }
 }
 
-@media all and (min-width: 681px){
+@media all and (min-width: 920px){
     #allHeaderButtons{
         position: absolute;
         right: 31px;
         top: 31px;
     }
 
-    #headerLogo{
+    #headerLogoLeft{
         position: absolute;
         top: 10px;
         left: 10px;
         height: 80px;
-        width: 200px;
+    }
+
+    #headerLogoRight{
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        height: 80px;
+    }
+
+    .buttons{
+        margin:0 15px;
     }
 
     #whoAreYou{
@@ -87,12 +110,19 @@
     }
 }
 
-.buttons:hover, #getInvolvedButton:hover{
-    background-color: darkgray;
+.buttons:hover{
+    transition: background-color 0.4s;
+    background-color: lightgray;
+}
+
+#getInvolvedButton:hover{
+    transition: background-color 0.4s;
+    background-color: #C32323;
 }
 
 #getInvolvedButton{
-    background-color: white;
+    background-color: #E74111;
+    color: white;
 }
 
 #transparentBackground{
