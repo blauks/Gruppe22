@@ -1,10 +1,8 @@
 
- .aboutBanner{
-  text-align: center;
-  color:white;
-}
+
 
 .aboutContainer{
+  overflow:auto;
   width:100%;
 }
 
@@ -46,7 +44,7 @@
 #WhyEPRM,#howEPRMWork, #OurObjectives{
   margin-left: auto;
   margin-right: auto;
-  height: 100;
+  height: 100%;
   width: 100%; margin: 0 auto;
   position:relative;
   overflow:auto;
@@ -122,7 +120,6 @@
 }
 
 #ourMembersContainer{
-  overflow:auto;
   background-color:green;
 }
 #ourMembers{
@@ -131,4 +128,60 @@
   background-color:orange;
   margin-left:auto;
   margin-right:auto;
+}
+.topMembers{
+  width:100%;
+  height:50px;
+}
+.threeMembers{
+  padding:20px 0px 20px 0px;
+  height:80px;
+  float:left;
+  width:25%;
+  background-color: blue;
+}
+
+.centerMembers{
+  padding:20px 0px 20px 0px;
+  height:80px;
+  float:left;
+  width:50%;
+  background-color: green;
+}
+
+.logoThreeMembers{
+  position:relative;
+  left:20%;
+  height:70%;
+  width:20%;
+  float:left;
+}
+.logoSixMembers{
+  position:relative;
+  left:20%;
+  width:calc(10%);
+  float:left;
+  height:70%;
+}
+
+/*Plan: make divs with a round backgorund image in them */
+.logoImg{
+  border-radius: 50%;
+  background-image: url("../img/icons/coridad2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+/*
+width: 50px;
+height: 50px;
+background-image: url("../img/icons/500px-Philips_logo_new.svg.png");
+background-size: contain;
+background-repeat: no-repeat;
+border-radius: 50%;
+background-position: center;
+background-color:
+*/
 }

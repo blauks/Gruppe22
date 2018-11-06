@@ -1,5 +1,3 @@
-
-
 //ads footer on run
 makeFooter();
 
@@ -25,6 +23,7 @@ function makeFooter(){
 
   //addding path to ..img/footerLogo.png image
   logoImg.src = "img/footerLogo.png";
+
 
   //assignts style to footer
   footer.classList.add("footer");
