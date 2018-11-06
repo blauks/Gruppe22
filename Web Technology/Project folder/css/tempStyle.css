@@ -57,6 +57,7 @@ a:hover {
     position:relative;
 }
 
+.aboutBanner {background-image:url("../img/bannerAbout.jpg");}
 .faqBanner { background-image:url('../img/bannerFaq.jpg'); }
 .cfpBanner { background-image:url('../img/bannerCfp.jpg'); }
 .fmBanner { background-image:url('../img/bannerFm.jpg'); }

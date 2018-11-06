@@ -1,3 +1,4 @@
+
 //remember to add an empty header with ID=head at the top of the HTML document
 
 function getInvolvedAnimation(){
@@ -38,11 +39,11 @@ function getInvolvedAnimation(){
         }
     }
 
-
 //For animation of the get involved button
 const transparentBackground = document.createElement("div");
 const clickBox1 = document.createElement("img");
 const clickBox2 = document.createElement("img");
+
 const whoAreYou = document.createElement("p");
 transparentBackground.appendChild(clickBox1);
 transparentBackground.appendChild(clickBox2);
@@ -105,4 +106,5 @@ buttons.appendChild(about);
 buttons.appendChild(projects);
 buttons.appendChild(news);
 buttons.appendChild(getInvolved);
+
 document.getElementById("head").appendChild(buttons);
