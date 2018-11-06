@@ -24,7 +24,7 @@ function makeFooter(){
   //addding path to ..img/footerLogo.png image
   logoImg.src = "img/footerLogo.png";
   //assignts style to footer
-  footer.style.cssText = "position:fixed; bottom:10px; height: 150px; background-color:#C32323; color:white; font-family:\"Open Sans\"; position:relative; ";
+  footer.style.cssText = "bottom:10px; height: 150px; background-color:#C32323; color:white; font-family:\"Open Sans\"; position:relative; ";
 
   contactInfoHeader.style.cssText="opacity:0.33;";
   findUsHereHeader.style.cssText="opacity:0.33;";

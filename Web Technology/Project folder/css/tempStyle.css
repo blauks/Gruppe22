@@ -143,8 +143,196 @@ a:hover {
 }
 
 
+#applicationPage{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+/* News CSS */
+#newsWrapper{
+	box-sizing: border-box;
+	position: relative;
+	min-height: 90vh;
+}
+
+.articleList{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#articles {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	overflow: scroll;
+	height: 85%;
+	width: 47vw;
+}
+
+#articles li {border-bottom: solid 2px #DCD9D9;}
+
+#articles div {display: none;}
+
+.newsContent {display: none;}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#righthandside{
+	position: absolute; 
+	font-family: 'Raleway';
+	top: 5%;
+	left: 62%;
+	right: 10%;
+}
+
+@media screen and (max-width: 1340px){
+	 #righthandside {
+		 display: none;
+	 }
+	 #articles{
+		 width: 80%;
+	 }
+}
+
+#rightimage {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#calendar {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+#subContainer{
+	position: relative;
+}
+
+#subscribe{
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background: #C32323;
+	color: white;
+	text-align: center;
+	/*
+	 -webkit-transition: width 2s;
+    transition: width 2s;
+	*/
+}
+
+#subscribe>h3 {
+	position: relative;
+	bottom: 10px;
+}
+
+/*
+#subscribe:hover{
+	width: 0%;
+}
+*/
+
+#email{
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	color: Black;
+	text-align: center;
+	padding: 10px;
+	Font-Size: 22px;
+	Line-Height: 28px;
+	Letter-Spacing: 2px;
+}
+
+.month{
+	width: 100%;
+    background: #C32323;
+    text-align: center;
+}
+
+.month ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.month ul li{
+	color: White;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.month .prev{
+	float: left;
+	padding-top: 10px;
+}
+
+.month .next{
+	float: right;
+	padding-top: 10px;
+}
+
+#months li{
+	display: none;
+}
+
+#months .activeMonth{
+	display: inline-block;
+}
+
+#months .inactiveMonth{
+	display: none;
+}
+
+.weekdays{
+	text-align: center;
+	margin: 0;
+	padding: 10px 3px;
+	background-color: #ddd;
+}
+
+.weekdays li{
+	display: inline-block;
+	width: 12%;
+	color: #666;
+}
+
+#days{
+	padding: 10px 0 0 10px; 
+	background: #eee;
+	margin: 0;
+}
+
+#days li{
+	display: inline-block;
+	width: 5%;
+	text-align: center;
+	font-size: 12px;
+	color: #777;
+	padding: 10px;
+	margin: 5px;
+}
+
+#days .activeDate{
+	background: #C32323;
+    color: white;
+}
+
 footer {
     width:100vw;
     height:20vh;
     background-color: #C32323;
+
+}
+
+.criteria{
+    height: 60px;
+    width: 100%;
+    background-color: gray;
 }
