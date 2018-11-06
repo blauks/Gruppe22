@@ -1,0 +1,119 @@
+#head{
+    background-color: #DCD9D9;
+    height: 100px;
+    width: 100%;
+}
+
+.buttons {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color:  #DCD9D9;
+    border: 0;
+    color: black;
+}
+
+@media all and (max-width: 432px){
+    .buttons{
+        font-size: 13px;
+    }
+    #allHeaderButtons{
+        top: 50px;
+    }
+}
+
+
+@media all and (max-width: 680px){
+    #allHeaderButtons{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
+
+    .buttons{
+        font-size: 15x;
+    }
+
+    #headerLogo{
+        position: absolute;
+        top: 1px;
+        left: 25%;
+        height: 50px;
+        width: 150px;
+    }
+    #whoAreYou{
+        position: relative;
+        text-align: center;
+        top: 25px;
+        left: 32%;
+        padding: 0.5%;
+        font-size: 3.5vw;
+        width: 35%;
+        background-color: rgba(255, 255, 255, 0.9);
+    
+    }
+}
+
+@media all and (min-width: 681px){
+    #allHeaderButtons{
+        position: absolute;
+        right: 31px;
+        top: 31px;
+    }
+
+    #headerLogo{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 80px;
+        width: 200px;
+    }
+
+    #whoAreYou{
+        position: relative;
+        text-align: center;
+        top: 12px;
+        left: 32%;
+        padding: 0.5%;
+        font-size: 2vw;
+        width: 35%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.buttons:hover, #getInvolvedButton:hover{
+    background-color: darkgray;
+}
+
+#getInvolvedButton{
+    background-color: white;
+}
+
+#transparentBackground{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ #clickBox1, #clickBox2{
+    position: fixed;
+    height: 38vw;
+    filter: grayscale(100%);
+    transition: filter 1s;
+    transition: height 0.5s;
+}
+
+#clickBox1:hover, #clickBox2:hover{
+    transition: filter 1s;
+    transition: height 0.5s;
+    height: 39vw;
+    filter: grayscale(0);
+}
+
+

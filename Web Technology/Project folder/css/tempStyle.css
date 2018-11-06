@@ -141,6 +141,12 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+#applicationPage{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
 /* News CSS */
 #newsWrapper{
 	box-sizing: border-box;
@@ -321,4 +327,11 @@ footer {
     width:100vw;
     height:20vh;
     background-color: #C32323;
+
+}
+
+.criteria{
+    height: 60px;
+    width: 100%;
+    background-color: gray;
 }
