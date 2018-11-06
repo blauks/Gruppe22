@@ -13,7 +13,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     background-color: white;
-    border: 0;
+    padding: 0 5px;
+    border: none;
     color: black;
 }
 
@@ -42,10 +43,6 @@
         #allHeaderButtons{
             width: 428px;
         }
-    }
-
-    .buttons{
-        margin: 0;
     }
 
     #headerLogoRight{
@@ -148,4 +145,13 @@
     transition: height 0.5s;
     height: 39vw;
     filter: grayscale(0);
+}
+
+#closeGetInvolved{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
 }

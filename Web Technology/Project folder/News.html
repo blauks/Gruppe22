@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <link rel="stylesheet" href="css/tempStyle.css">
+	<link rel="stylesheet" href="css/tempStyle.css">
+	<link rel="stylesheet" href="css/header.css">
 </head>
 <body>
+	<header id="head"></header>
 	<div class="bannerImg newsBanner">
 		<div class="bannerTitle">
 			<div class="bannerText">News </div>
@@ -14,7 +16,6 @@
 		</div>
 	</div>
 	<div id="newsWrapper">
-	<div id="head"></div>
 	<div id="articles">
 	<ul class="articleList">
 		<li>
@@ -160,13 +161,14 @@
 			<li id="articleImages">
 				<img id="" src="">
 				<img id=""  src="">
-				<img id="rightimage" class="activeImage" src="Img/NewsImages/ICMM.jpg">
+				<img id="rightimage" class="activeImage" src="img/NewsImages/ICMM.jpg">
 			</li>
 			<li><div id="subContainer"><div id="subscribe" onmouseover="shrink()"><h3>Subscribe to our newsletters!</h3></div></div> <input type="email" id="email" name="email" placeholder="example@domain.com" required></li>
 		</ul>
 	</div>
 	</div>
 	<script type="text/javascript" src="js/footer.js"></script>
+    <script src="js/header.js"></script>
 	<script type="text/javascript" src="js/news.js"></script>
 <body>
 </html>

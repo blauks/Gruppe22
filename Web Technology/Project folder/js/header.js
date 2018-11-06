@@ -1,6 +1,10 @@
 
 //remember to add an empty header with ID=head at the top of the HTML document
 
+function removeTransparentBackground(){
+    document.body.removeChild(transparentBackground);
+}
+
 function getInvolvedAnimation(){
     document.body.appendChild(transparentBackground);
     clickBox1.style.margin = "0px 30%";
@@ -8,24 +12,24 @@ function getInvolvedAnimation(){
     transparentBackground.setAttribute("id", "transparentBackground");
     let x = 1;
     let stage = 0;
-    let moveBox = setInterval(moveBoxFunc, 10);
+    let moveBox = setInterval(moveBoxFunc, 7);
     function moveBoxFunc(){
         if(stage == 0){
-            x = x*1.08;
+            x = x*1.1;
             if(x >= 95){
                 stage = 1;
             }
         }
         
         else if(stage == 1){
-            x = x - x*0.007;
+            x = x - x*0.012;
             if(x < 70){
                 stage = 2;
             }
         }
 
         else {
-            x = x*1.0035;
+            x = x*1.0055;
             if(x >= 95){
                 transparentBackground.appendChild(whoAreYou);
                 clearInterval(moveBox);
@@ -68,6 +72,7 @@ const about = document.createElement("button");
 const projects = document.createElement("button");
 const news = document.createElement("button");
 const getInvolved = document.createElement("button");
+const xButton = document.createElement("button");
 
 about.setAttribute("class","buttons");
 projects.setAttribute("class", "buttons");
@@ -76,8 +81,8 @@ getInvolved.setAttribute("class", "buttons");
 getInvolved.setAttribute("onClick","getInvolvedAnimation()");
 
 about.setAttribute("onclick","location.href='about.html'");
-//projects.setAttribute("onclick","location.href='projects.html'")
-//news.setAttribute("onclick","location.href='news.html'")
+projects.setAttribute("onclick","location.href='Projects.html'")
+news.setAttribute("onclick","location.href='News.html'")
 
 about.setAttribute("id","aboutButton");
 projects.setAttribute("id", "projectsButton");
@@ -87,12 +92,12 @@ getInvolved.setAttribute("id", "getInvolvedButton");
 logoLeft.setAttribute("Alt","logoLeft");
 logoLeft.setAttribute("src","img/logo-left.png")
 logoLeft.setAttribute("id", "headerLogoLeft");
-//logoLeft.setAttribute("onclick","location.href='index.html'");
+logoLeft.setAttribute("onclick","location.href='index.html'");
 
 logoRight.setAttribute("Alt","logoRight");
 logoRight.setAttribute("src","img/logo-right.png")
 logoRight.setAttribute("id", "headerLogoRight");
-//logoRight.setAttribute("onclick","location.href='index.html'");
+logoRight.setAttribute("onclick","location.href='index.html'");
 
 about.appendChild(document.createTextNode("ABOUT"));
 projects.appendChild(document.createTextNode("PROJECTS"));
@@ -114,3 +119,8 @@ buttons.appendChild(news);
 buttons.appendChild(getInvolved);
 
 document.getElementById("head").appendChild(buttons);
+
+xButton.appendChild(document.createTextNode("X"));
+xButton.setAttribute("id","closeGetInvolved");
+xButton.setAttribute("onclick","removeTransparentBackground()")
+transparentBackground.appendChild(xButton);
