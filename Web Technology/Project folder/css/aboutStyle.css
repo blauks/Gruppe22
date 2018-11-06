@@ -1,0 +1,146 @@
+
+ .aboutBanner{
+  text-align: center;
+  color:white;
+}
+#bannerContainer{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+#bannerContainer h1{
+  position: absolute;
+  width:100%;
+  text-align: center;
+
+}
+
+#buttonBarContainer{
+  height:250px;
+  width:100%;
+  background-color:#FFFFFF;
+  color:black;
+}
+#buttonBar{
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 70%; margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+#buttonBar a {
+      color:black;
+}
+#buttonBar a:hover{
+  color:grey;
+}
+
+#buttonBar div{
+  float:left;
+  width:25%;
+}
+
+
+#aboutUsContainer{
+  width:100%;
+  background-color:#E5E5E5;
+  height:100%;
+  overflow:auto;
+}
+#aboutUs{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+#WhyEPRM,#howEPRMWork, #OurObjectives{
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  width: 100%; margin: 0 auto;
+  position:relative;
+  overflow:auto;
+}
+
+.aboutUsText{
+  float:left;
+  width: 80vh;
+  height:80vh;
+  text-align: left;
+}
+.aboutUsImg{
+  position:relative;
+  float:left;
+  width:90vh;
+  height:60vh;
+}
+.aboutUsImg img{
+  position:relative;
+  top:10vh;
+  left:10vh;
+  width:60vh;
+  height:60vh;
+}
+
+#ourPurposeContainer{
+  overflow:auto;
+  background-color: #FFFFFF;
+  width:100%;
+  height:100%;
+}
+#ourPurpose{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+#ourStructureContainer{
+  overflow:auto;
+  width:100%;
+  height:100%;
+  background-color:#E5E5E5;
+}
+#ourStructure{
+  background-color:#56CCF2;
+  overflow:auto;
+  width:100%;
+  height:100%;
+}
+#ourStructureControll{
+  margin-left:auto;
+  margin-right:auto;
+
+  width:80%;
+  text-align: center;
+  overflow:auto;
+}
+#ourStructureControll .structureButtonBar{
+  overflow:auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 70%; margin: 0 auto;
+}
+.structureButton{
+  position:relative;
+  float:left;
+  width:25%;
+}
+#ourStructureDisplay{
+  overflow:auto;
+  text-align:center;
+}
+
+#ourMembersContainer{
+  overflow:auto;
+  width:100%;
+  background-color:green;
+}
+#ourMembers{
+  text-align:center;
+  width:80%;
+  background-color:orange;
+  margin-left:auto;
+  margin-right:auto;
+}

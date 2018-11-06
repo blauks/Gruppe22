@@ -1,34 +1,41 @@
 //remember to add an empty div with ID=head at the top of the HTML document
-//not finished
 
 function getInvolvedAnimation(){
     document.body.appendChild(transparentBackground);
-    transparentBackground.style.position = "absolute";
-    transparentBackground.style.top = "100px";
-    transparentBackground.style.minHeight = "100vh";
-    transparentBackground.style.width = "100vw";
-    transparentBackground.style.backgroundColor = "rgba(0,0,0,0.2)";
+    transparentBackground.setAttribute("id", "transparentBackground");
     }
 
 //For animation of the get involved button
-var transparentBackground = document.createElement("div");
-var clickBox1 = document.createElement("img");
-var clickBox2 = document.createElement("img");
-var clickBoxDiv = document.createElement("div");
+const transparentBackground = document.createElement("div");
+const clickBox1 = document.createElement("img");
+const clickBox2 = document.createElement("img");
+const clickBoxDiv = document.createElement("div");
 clickBoxDiv.appendChild(clickBox1);
 clickBoxDiv.appendChild(clickBox2);
 transparentBackground.appendChild(clickBoxDiv);
 
 //For navbar
-var logo = document.createElement("img")
-var about = document.createElement("button")
-var projects = document.createElement("button")
-var news = document.createElement("button")
-var getInvolved = document.createElement("button")
+const logo = document.createElement("img")
+const about = document.createElement("button")
+const projects = document.createElement("button")
+const news = document.createElement("button")
+const getInvolved = document.createElement("button")
+
+about.setAttribute("class","buttons");
+projects.setAttribute("class", "buttons");
+news.setAttribute("class", "buttons");
+getInvolved.setAttribute("class", "buttons");
+getInvolved.setAttribute("onClick","getInvolvedAnimation()");
+
+about.setAttribute("id","aboutButton");
+projects.setAttribute("id", "projectsButton");
+news.setAttribute("id", "newsButton");
+getInvolved.setAttribute("id", "getInvolvedButton");
 
 logo.setAttribute("Alt","logo");
+logo.setAttribute("id", "headerLogo");
 
-var buttonList = [about,projects,news,getInvolved]
+const buttonList = [about,projects,news,getInvolved]
 
 about.appendChild(document.createTextNode("ABOUT"))
 projects.appendChild(document.createTextNode("PROJECTS"))
@@ -41,46 +48,10 @@ document.getElementById("head").appendChild(projects)
 document.getElementById("head").appendChild(news)
 document.getElementById("head").appendChild(getInvolved)
 
-document.getElementById("head").style.backgroundColor = "#DCD9D9"
-document.getElementById("head").style.height = "100px";
-document.getElementById("head").style.margin = "-8px";
-
-var buttons = document.createElement("div");
+const buttons = document.createElement("div");
+buttons.setAttribute("id","allHeaderButtons");
 buttons.appendChild(about)
 buttons.appendChild(projects)
 buttons.appendChild(news)
 buttons.appendChild(getInvolved)
-document.getElementById("head").appendChild(buttons)
-
-buttons.style.position = "absolute";
-buttons.style.right = "31px";
-buttons.style.top = "31px";
-
-logo.style.position = "absolute";
-logo.style.top = "32px";
-logo.style.left = "32px";
-logo.style.height = "34px";
-logo.style.width = "200px";
-logo.style.border = "1px solid black";
-
-buttonList.forEach(function(bt){
-    bt.style.fontFamily = "'Raleway', sans-serif";
-    bt.style.fontStyle = "ExtraBold";
-    bt.style.fontSize = "18px";
-    bt.style.lineHeight = "33px";
-    bt.style.letterSpacing = "10%";
-    bt.style.textTransform = "uppercase";
-    bt.style.backgroundColor = "#DCD9D9";
-    bt.style.border = "0";
-    bt.style.color = "black";
-    if(bt != getInvolved){
-        bt.style.position = "relative";
-        bt.style.left = "-5px"
-    }
-})
-
-getInvolved.style.backgroundColor = "white";
-getInvolved.setAttribute("onClick","getInvolvedAnimation()");
-
-
-
+document.getElementById("head").appendChild(buttons);
