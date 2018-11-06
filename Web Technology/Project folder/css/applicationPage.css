@@ -1,0 +1,18 @@
+.criterias {
+    border: 1px solid darkgray;
+}
+
+
+
+.criteriaHeaders{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.informationContainers{
+    display: none;
+    position: relative;
+    text-align: left;
+    left: 5px;
+}

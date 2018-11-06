@@ -1,7 +1,8 @@
 #head{
-    background-color: #DCD9D9;
+    background-color: white;
     height: 100px;
     width: 100%;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -11,14 +12,16 @@
     line-height: 33px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    background-color:  #DCD9D9;
+    background-color: white;
     border: 0;
     color: black;
 }
 
-@media all and (max-width: 432px){
+@media all and (max-width: 505px){
     .buttons{
         font-size: 13px;
+        padding: 0;
+
     }
     #allHeaderButtons{
         top: 50px;
@@ -26,7 +29,7 @@
 }
 
 
-@media all and (max-width: 680px){
+@media all and (max-width: 775px){
     #allHeaderButtons{
         position: absolute;
         left: 0px;
@@ -36,6 +39,7 @@
 
     .buttons{
         font-size: 15x;
+        margin:0 10px;
     }
 
     #headerLogo{
@@ -59,7 +63,7 @@
     }
 }
 
-@media all and (min-width: 681px){
+@media all and (min-width: 776px){
     #allHeaderButtons{
         position: absolute;
         right: 31px;
@@ -72,6 +76,10 @@
         left: 10px;
         height: 80px;
         width: 200px;
+    }
+
+    .buttons{
+        margin:0 15px;
     }
 
     #whoAreYou{
@@ -87,12 +95,19 @@
     }
 }
 
-.buttons:hover, #getInvolvedButton:hover{
-    background-color: darkgray;
+.buttons:hover{
+    transition: background-color 0.4s;
+    background-color: lightgray;
+}
+
+#getInvolvedButton:hover{
+    transition: background-color 0.4s;
+    background-color: #C32323;
 }
 
 #getInvolvedButton{
-    background-color: white;
+    background-color: #E74111;
+    color: white;
 }
 
 #transparentBackground{

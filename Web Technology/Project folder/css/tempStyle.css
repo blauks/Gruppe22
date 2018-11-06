@@ -33,7 +33,7 @@ h3 {
     letter-spacing: 10%;
 }
 
-p{
+p, ul{
     font-family: 'Raleway';
     font-size: 16px;
     line-height: 25px;
@@ -148,6 +148,7 @@ a:hover {
     width: 80%;
     margin: 10px auto;
 }
+
 /* News CSS */
 #newsWrapper{
 	box-sizing: border-box;
@@ -329,10 +330,4 @@ footer {
     height:20vh;
     background-color: #C32323;
 
-}
-
-.criteria{
-    height: 60px;
-    width: 100%;
-    background-color: gray;
 }

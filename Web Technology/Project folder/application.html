@@ -6,6 +6,7 @@
     <title>EPRM - Application</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/tempStyle.css">
+    <link rel="stylesheet" href="css/applicationPage.css">
   </head>
   <body>
     <header id="head"></header>
@@ -18,9 +19,9 @@
           You can find the criteria per pillar below as well as the different constituency guidelines.</p>
       </div>
       
-      <div class="criterias" id="supplyChainCriteria">
+      <div class="criterias" id="supplyChainCriteria" onclick="dropDownMenu(this)">
         <p class="criteriaHeaders">Supply Chain Actors Criteria:</p>
-          <div class="informationContainers">
+          <div class="informationContainers" id="supplyChainCriteriaChild">
             <p>Three types of membership options:</p>
             <ul>
               <li>Strategic membership with an annual rate of € 30,000.</li>
@@ -37,9 +38,9 @@
 
       <br>
 
-      <div class="criterias" id="civilCriteria">
+      <div class="criterias" id="civilCriteria" onclick="dropDownMenu(this)">
         <p class="criteriaHeaders">Civil Society Criteria:</p>
-          <div class="informationContainers">
+          <div class="informationContainers" id="civilCriteriaChild">
             <p>Instead of a financial contribution, civil society organisations can allocate working capacity to support EPRM’s activities and governance.</p>
             <p>Organisations should have a proven track record of experience in the field of responsible supply chains, mining, due diligence or a related subject;</p>
             <p>Organisations should be able to show that they are non-profit organisations. Before becoming a participant, NGOs have to show that they meet the above criteria.</p>
@@ -48,9 +49,9 @@
 
       <br>
       
-      <div class="criterias" id="governmentCriterias">
+      <div class="criterias" id="governmentCriterias" onclick="dropDownMenu(this)">
         <p class="criteriaHeaders">Government Agencies & Institutions Criteria:</p>
-          <div class="informationContainers">
+          <div class="informationContainers" id="governmentCriteriasChild">
             <p>Financial contributions to EPRM can be provided by government agencies and institutions.</p>
             <p>The financial contributions from the government pillars will be used for granting projects in mining areas.</p>
             <p>Government agencies and institutions should not be listed on the United Nations sanctions list or an EU sanctions list.</p>
@@ -62,6 +63,7 @@
 
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/applicationPage.js"></script>
   </body>
 </html>
 
