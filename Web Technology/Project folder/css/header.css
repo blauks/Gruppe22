@@ -17,38 +17,47 @@
     color: black;
 }
 
-@media all and (max-width: 505px){
-    .buttons{
-        font-size: 13px;
-        padding: 0;
-
-    }
-    #allHeaderButtons{
-        top: 50px;
-    }
-}
-
-
-@media all and (max-width: 775px){
+@media all and (max-width: 919px){    
     #allHeaderButtons{
         position: absolute;
-        left: 0px;
-
+        left: 50%;
         top: 50px;
+        transform: translate(-50%, 0);
+    }
+
+    @media all and (max-width: 440px){
+        .buttons{
+            font-size: 13px;
+        }
+        #allHeaderButtons{
+            width: 330px;
+        }
+    }
+
+    @media all and (min-width:441px){
+        .buttons{
+            font-size: 15x;
+        }
+
+        #allHeaderButtons{
+            width: 428px;
+        }
     }
 
     .buttons{
-        font-size: 15x;
-        margin:0 10px;
+        margin: 0;
     }
 
-    #headerLogo{
+    #headerLogoRight{
+        display: none;
+    }
+
+    #headerLogoLeft{
         position: absolute;
         top: 1px;
-
-        left: 25%;
+        left: 50%;
+        transform: translate(-50%, 0);
         height: 50px;
-        width: 150px;
     }
     #whoAreYou{
         position: relative;
@@ -63,19 +72,25 @@
     }
 }
 
-@media all and (min-width: 776px){
+@media all and (min-width: 920px){
     #allHeaderButtons{
         position: absolute;
         right: 31px;
         top: 31px;
     }
 
-    #headerLogo{
+    #headerLogoLeft{
         position: absolute;
         top: 10px;
         left: 10px;
         height: 80px;
-        width: 200px;
+    }
+
+    #headerLogoRight{
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        height: 80px;
     }
 
     .buttons{
