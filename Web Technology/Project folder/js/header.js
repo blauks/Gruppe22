@@ -62,11 +62,12 @@ clickBox2.setAttribute("onclick","location.href='CallsForProposals.html'")
 
 
 //For navbar
-const logo = document.createElement("img")
-const about = document.createElement("button")
-const projects = document.createElement("button")
-const news = document.createElement("button")
-const getInvolved = document.createElement("button")
+const logoLeft = document.createElement("img");
+const logoRight = document.createElement("img");
+const about = document.createElement("button");
+const projects = document.createElement("button");
+const news = document.createElement("button");
+const getInvolved = document.createElement("button");
 
 about.setAttribute("class","buttons");
 projects.setAttribute("class", "buttons");
@@ -83,18 +84,23 @@ projects.setAttribute("id", "projectsButton");
 news.setAttribute("id", "newsButton");
 getInvolved.setAttribute("id", "getInvolvedButton");
 
-logo.setAttribute("Alt","logo");
-logo.setAttribute("src","img/colourLogoEPRM.png")
-logo.setAttribute("id", "headerLogo");
+logoLeft.setAttribute("Alt","logoLeft");
+logoLeft.setAttribute("src","img/logo-left.png")
+logoLeft.setAttribute("id", "headerLogoLeft");
+//logoLeft.setAttribute("onclick","location.href='index.html'");
 
-const buttonList = [about,projects,news,getInvolved]
+logoRight.setAttribute("Alt","logoRight");
+logoRight.setAttribute("src","img/logo-right.png")
+logoRight.setAttribute("id", "headerLogoRight");
+//logoRight.setAttribute("onclick","location.href='index.html'");
 
 about.appendChild(document.createTextNode("ABOUT"));
 projects.appendChild(document.createTextNode("PROJECTS"));
 news.appendChild(document.createTextNode("NEWS"));
 getInvolved.appendChild(document.createTextNode("GET INVOLVED"));
 
-document.getElementById("head").appendChild(logo);
+document.getElementById("head").appendChild(logoLeft);
+document.getElementById("head").appendChild(logoRight);
 document.getElementById("head").appendChild(about);
 document.getElementById("head").appendChild(projects);
 document.getElementById("head").appendChild(news);
