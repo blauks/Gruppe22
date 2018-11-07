@@ -3,6 +3,7 @@
 
 function removeTransparentBackground(){
     document.body.removeChild(transparentBackground);
+    document.body.removeChild(whoAreYou);
 }
 
 function getInvolvedAnimation(){
@@ -73,6 +74,12 @@ const projects = document.createElement("button");
 const news = document.createElement("button");
 const getInvolved = document.createElement("button");
 const xButton = document.createElement("button");
+const chooseLogo = document.createElement("a");
+
+chooseLogo.appendChild(logoRight);
+chooseLogo.appendChild(logoLeft);
+document.getElementById("head").appendChild(chooseLogo);
+chooseLogo.setAttribute("id","chooseLogoHeader");
 
 about.setAttribute("class","buttons");
 projects.setAttribute("class", "buttons");
@@ -104,8 +111,6 @@ projects.appendChild(document.createTextNode("PROJECTS"));
 news.appendChild(document.createTextNode("NEWS"));
 getInvolved.appendChild(document.createTextNode("GET INVOLVED"));
 
-document.getElementById("head").appendChild(logoLeft);
-document.getElementById("head").appendChild(logoRight);
 document.getElementById("head").appendChild(about);
 document.getElementById("head").appendChild(projects);
 document.getElementById("head").appendChild(news);
