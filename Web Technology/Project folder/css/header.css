@@ -5,6 +5,9 @@
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
 }
 
+#chooseLogoHeader:hover{
+    cursor: pointer;
+}
 
 .buttons {
     font-family: 'Raleway', sans-serif; 
@@ -13,7 +16,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     background-color: white;
-    border: 0;
+    padding: 0 5px;
+    border: none;
     color: black;
 }
 
@@ -44,10 +48,6 @@
         }
     }
 
-    .buttons{
-        margin: 0;
-    }
-
     #headerLogoRight{
         display: none;
     }
@@ -59,6 +59,7 @@
         transform: translate(-50%, 0);
         height: 50px;
     }
+
     #whoAreYou{
         position: relative;
         text-align: center;
@@ -113,6 +114,7 @@
 .buttons:hover{
     transition: background-color 0.4s;
     background-color: lightgray;
+    cursor: pointer;
 }
 
 #getInvolvedButton:hover{
@@ -148,4 +150,14 @@
     transition: height 0.5s;
     height: 39vw;
     filter: grayscale(0);
+    cursor: pointer;
+}
+
+#closeGetInvolved{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
 }
