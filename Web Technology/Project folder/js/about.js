@@ -27,7 +27,7 @@ function structureDisplay(structurePage){
 
 function drawMembers(){
 
-  let imgPath = "url('img/icons/logo"
+  let imgPath = "url('img/iconsAbout/logo"
   let imgCounter = 0; //counter is used to specify which logo
   let row = document.getElementById("topMembers1");
   let groups = row.childNodes;
