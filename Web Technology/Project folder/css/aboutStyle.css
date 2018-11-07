@@ -120,12 +120,15 @@
 }
 
 #ourMembersContainer{
-  background-color:green;
+  background-color:#FFFFFF;
+  position:relative;
+
 }
 #ourMembers{
+  overflow: auto;
   text-align:center;
   width:80%;
-  background-color:orange;
+  background-color:grey;
   margin-left:auto;
   margin-right:auto;
 }
@@ -138,7 +141,6 @@
   height:80px;
   float:left;
   width:25%;
-  background-color: blue;
 }
 
 .centerMembers{
@@ -146,42 +148,30 @@
   height:80px;
   float:left;
   width:50%;
-  background-color: green;
 }
 
 .logoThreeMembers{
   position:relative;
-  left:20%;
+  left:15%;
   height:70%;
   width:20%;
   float:left;
+  margin-right:5%;
 }
 .logoSixMembers{
   position:relative;
-  left:20%;
+  left:15%;
   width:calc(10%);
   float:left;
   height:70%;
+  margin-right:2.5%;
 }
 
-/*Plan: make divs with a round backgorund image in them */
+
 .logoImg{
   border-radius: 50%;
-  background-image: url("../img/icons/coridad2.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
-}
-
-/*
-width: 50px;
-height: 50px;
-background-image: url("../img/icons/500px-Philips_logo_new.svg.png");
-background-size: contain;
-background-repeat: no-repeat;
-border-radius: 50%;
-background-position: center;
-background-color:
-*/
 }
