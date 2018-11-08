@@ -3,12 +3,14 @@
   <head>
     <link rel="stylesheet" href="css/tempStyle.css" type="text/css">
     <link rel="stylesheet" href="css/aboutStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="utf-8">
     <title>About the EPRM</title>
   </head>
   <body>
     <!-- Nav bar here!-->
+    <header id="head"></header>
     <div class="bannerImg aboutBanner">
         <div class="bannerTitle">
             <div class="bannerText">Know more about the <b>EPRM</b></div>
@@ -26,13 +28,13 @@
         <a href="#ourPurpose">
         <div id=ourPurposeButton>
           <h4>Purpose</h4>
-          <i id="aboutUsButtonIcon" class="material-icons md-48">public</i>
+          <i id="PurposeButtonIcon" class="material-icons md-48">public</i>
         </div>
         </a>
         <a href="#ourStructure">
         <div id="ourStructureButton">
           <h4>Structure</h4>
-          <i id="ourStructureButtonIcon" class="material-icons md-48">share</i>
+          <i id="ourStructureButtonIcon" class="material-icons md-48">line_style</i>
         </div>
       </a>
       <a href="#ourMembers">
@@ -57,13 +59,13 @@
             </div>
             <div class="aboutUsImg">
               <div class="imgContainer">
-                <img src="./img/about/excavationImg.jpg"></img>
+                <img src="./img/about/excavationImg.jpg">
               </div>
             </div>
             </div>
           <div id="howEPRMWork">
             <div class="aboutUsImg">
-              <img src="./img/about/gearsImg.jpg"></img>
+              <img src="./img/about/gearsImg.jpg">
             </div>
             <div class="aboutUsText">
               <h2><u>How does EPRM work?</u></h2>
@@ -81,7 +83,7 @@
                 </ul>
               </div>
               <div class="aboutUsImg">
-                <img src="./img/about/miningSiteImg.jpg"></img>
+                <img src="./img/about/miningSiteImg.jpg">
               </div>
           </div>
         </div>
@@ -94,25 +96,27 @@
       </div>
     </div>
     <div class="aboutContainer" id="ourStructureContainer">
+      <br>
+      <br>
       <div id="ourStructure">
         <div id="ourStructureControll">
-            <h2>The Structure of the<br><b>EPRM<b/></h2>
+            <h2>The Structure of the<br><b>EPRM</b></h2>
               <div id=structureButtonBar>
                 <div class="structureButton" onclick="structureDisplay(1);">
                   <h4>Supply chain</h4>
-                  <i id="aboutUsButtonIcon" class="material-icons md-48">public</i>
+                  <i id="supplyChainButtonIcon" class="material-icons md-48">local_shipping</i>
                 </div>
                 <div class="structureButton" onclick="structureDisplay(2);">
-                  <h4>Civil society<h4>
-                  <i id="aboutUsButtonIcon" class="material-icons md-48">public</i>
+                  <h4>Civil society</h4>
+                  <i id="civilSocietyButtonIcon" class="material-icons md-48">location_city</i>
                 </div>
                 <div class="structureButton" onclick="structureDisplay(3);">
                   <h4>Governments and Insitutions</h4>
-                  <i id="aboutUsButtonIcon" class="material-icons md-48">public</i>
+                  <i id="GovernmentsAndInstitutionsButtonIcon" class="material-icons md-48">account_balance</i>
                 </div>
                 <div class="structureButton" onclick="structureDisplay(4);">
                   <h4>Observers</h4>
-                  <i id="aboutUsButtonIcon" class="material-icons md-48">public</i>
+                  <i id="observersButtonIcon" class="material-icons md-48">visibility</i>
                 </div>
               </div>
           </div>
@@ -121,10 +125,24 @@
             <p id="ourStructureParagraph"></p>
           </div>
       </div>
+      <br>
+      <br>
     </div>
+    <br>
+    <br>
     <div class="aboutContainer" id="ourMembersContainer">
       <div id="ourMembers">
         <h2>Members of the <b>EPRM</b></h2>
+        <div class="membersTitleContainer"></div>
+          <div class="membersTitle">
+            <h4>Regular members</h4>
+          </div>
+          <div class="membersTitle">
+            <h4>strategic members</h4>
+          </div>
+          <div class="membersTitle">
+            <h4>basic members</h4>
+          </div>
         <div class="topMembers" id="topMembers1">
           <div class="threeMembers">
           </div>
@@ -133,6 +151,16 @@
           <div class="threeMembers">
           </div>
         </div>
+        <div class="membersTitleContainer"></div>
+          <div class="membersTitle">
+            <h4>Regular members</h4>
+          </div>
+          <div class="membersTitle">
+            <h4>strategic members</h4>
+          </div>
+          <div class="membersTitle">
+            <h4>basic members</h4>
+          </div>
         <div class="topMembers" id="topMembers2">
           <div class="threeMembers">
           </div>
@@ -142,11 +170,10 @@
           </div>
         </div>
       </div>
+      <br>
+      <br>
     </div>
-    </div>
-    </div>
-  </div>
-  </div>
+  <script type="text/javascript" src="./js/header.js"></script>
   <script type="text/javascript" src="./js/footer.js"></script>
   <script type="text/javascript" src="./js/about.js"></script>
   </body>

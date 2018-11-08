@@ -1,24 +1,24 @@
 
-
-
 .aboutContainer{
   overflow:auto;
   width:100%;
 }
 
 #buttonBarContainer{
-  height:250px;
+  height:170px;
   background-color:#FFFFFF;
   color:black;
 }
+
 #buttonBar{
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 100px;
   width: 70%; margin: 0 auto;
   text-align: center;
   background-color: white;
 }
+
 #buttonBar a {
       color:black;
 }
@@ -89,18 +89,19 @@
   background-color:#E5E5E5;
 }
 #ourStructure{
-  background-color:#56CCF2;
   overflow:auto;
-  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;
   height:100%;
 }
 #ourStructureControll{
   margin-left:auto;
   margin-right:auto;
-
   width:80%;
   text-align: center;
   overflow:auto;
+  background-color: rgba(86, 204, 246, 0.51);
 }
 #ourStructureControll .structureButtonBar{
   overflow:auto;
@@ -116,7 +117,11 @@
 }
 #ourStructureDisplay{
   overflow:auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align:center;
+  width:80%;
+  background-color: rgba(86, 204, 246);
 }
 
 #ourMembersContainer{
@@ -132,6 +137,16 @@
   margin-left:auto;
   margin-right:auto;
 }
+.membersTitleContainer{
+  width:100%;
+  overflow:auto;
+  float:left;
+}
+.membersTitle{
+  width:33%;
+  float:left;
+}
+
 .topMembers{
   width:100%;
   height:50px;
