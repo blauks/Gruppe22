@@ -2,19 +2,23 @@
 .aboutContainer{
   overflow:auto;
   width:100%;
+  height:100%;
+}
+.centralized{
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
 }
 
+/* Button bar */
 #buttonBarContainer{
-  height:170px;
   background-color:#FFFFFF;
   color:black;
 }
 
 #buttonBar{
-  margin-left: auto;
-  margin-right: auto;
   height: 100px;
-  width: 70%; margin: 0 auto;
+  width: 70%;
   text-align: center;
   background-color: white;
 }
@@ -30,11 +34,14 @@
   float:left;
   width:25%;
 }
+#buttonBar div i{
+  float:left;
+  width:100%;
+  height:100%;
+}
 
 #aboutUsContainer{
   background-color:#E5E5E5;
-  height:100%;
-  overflow:auto;
 }
 #aboutUs{
   width:80%;
@@ -42,12 +49,11 @@
   margin-right:auto;
 }
 #WhyEPRM,#howEPRMWork, #OurObjectives{
-  margin-left: auto;
-  margin-right: auto;
   height: 100%;
-  width: 100%; margin: 0 auto;
+  width: 100%;
   position:relative;
   overflow:auto;
+
 }
 
 .aboutUsText{
@@ -72,53 +78,38 @@
 }
 
 #ourPurposeContainer{
-  overflow:auto;
   background-color: #FFFFFF;
-  height:100%;
 }
 #ourPurpose{
   width:70%;
-  margin-left:auto;
-  margin-right:auto;
   text-align:center;
 }
 
 #ourStructureContainer{
-  overflow:auto;
-  height:100%;
   background-color:#E5E5E5;
 }
 #ourStructure{
-  overflow:auto;
-  margin-left:auto;
-  margin-right:auto;
   width:80%;
   height:100%;
 }
 #ourStructureControll{
-  margin-left:auto;
-  margin-right:auto;
   width:80%;
-  text-align: center;
   overflow:auto;
+  text-align: center;
   background-color: rgba(86, 204, 246, 0.51);
 }
 #ourStructureControll .structureButtonBar{
-  overflow:auto;
-  margin-left: auto;
-  margin-right: auto;
   height: 80%;
-  width: 70%; margin: 0 auto;
+  width: 70%;
 }
 .structureButton{
   position:relative;
   float:left;
   width:25%;
 }
+
 #ourStructureDisplay{
   overflow:auto;
-  margin-left: auto;
-  margin-right: auto;
   text-align:center;
   width:80%;
   background-color: rgba(86, 204, 246);
@@ -126,20 +117,17 @@
 
 #ourMembersContainer{
   background-color:#FFFFFF;
-  position:relative;
 
 }
+
 #ourMembers{
   overflow: auto;
   text-align:center;
   width:80%;
   background-color:grey;
-  margin-left:auto;
-  margin-right:auto;
 }
 .membersTitleContainer{
   width:100%;
-  overflow:auto;
   float:left;
 }
 .membersTitle{
@@ -151,42 +139,44 @@
   width:100%;
   height:50px;
 }
-.threeMembers{
+
+.members{
   padding:20px 0px 20px 0px;
   height:80px;
   float:left;
+
+}
+.threeMembers{
   width:25%;
 }
 
 .centerMembers{
-  padding:20px 0px 20px 0px;
-  height:80px;
-  float:left;
   width:50%;
 }
 
-.logoThreeMembers{
+.logoMembers{
   position:relative;
   left:15%;
   height:70%;
-  width:20%;
   float:left;
-  margin-right:5%;
-}
-.logoSixMembers{
-  position:relative;
-  left:15%;
-  width:calc(10%);
-  float:left;
-  height:70%;
-  margin-right:2.5%;
-}
-
-
-.logoImg{
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+}
+.logoThreeMembers{
+  width:20%;
+  margin-right:5%;
+}
+.logoSixMembers{
+  width:calc(10%);
+  margin-right:2.5%;
+}
+
+@media all and (max-width:480px){
+  #buttonBarContainer div {
+    height:;
+  }
+
 }
