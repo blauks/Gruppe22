@@ -104,8 +104,7 @@ function changeOpacity(title,paragraph,percentage){
 //itterates through all the logos, placing them as backgrounds in a div, and appnds them in groups of 3 - 6 - 3, two times
 function drawMembers(){
 
-
-  let imgPath = "url('img/icons/logo"
+  let imgPath = "url('img/iconsAbout/logo"
   let imgCounter = 0; //counter is used to specify which logo
   let row = document.getElementById("topMembers1");
   let groups = row.childNodes;

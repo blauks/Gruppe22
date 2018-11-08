@@ -212,7 +212,7 @@ a:hover {
 
 .footer {
     position:fixed;
-    bottom:10px;
+    /* bottom:10px; */
     height: 150px;
     background-color:#C32323;
     color:white;
