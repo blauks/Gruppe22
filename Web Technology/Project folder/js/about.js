@@ -37,7 +37,6 @@ function structureDisplay(structurePage){
         paragraphContent = "OECD<br>UN Environment (UNEP)<br>The Commission’s Directorate-General for International Cooperation and Development (DG DEVCO)";
         break;
     }
-
       fadeOpacity(title, paragraph);
         setTimeout(function(){
           title.innerHTML = titleContent;

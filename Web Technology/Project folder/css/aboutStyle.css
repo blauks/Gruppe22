@@ -1,3 +1,7 @@
+h4{
+  color:white;
+  font-family: open-sans;
+}
 
 .aboutContainer{
   overflow:auto;
@@ -14,6 +18,8 @@
 #buttonBarContainer{
   background-color:#FFFFFF;
   color:black;
+  height:100%;
+  padding-bottom:2.5%;
 }
 
 #buttonBar{
@@ -23,25 +29,36 @@
   background-color: white;
 }
 
-#buttonBar a {
-      color:black;
-}
-#buttonBar a:hover{
-  color:grey;
-}
 
 #buttonBar div{
+  transition: color 0.5s;
+  color:black;
+  float:left;
+  width:25%;
+
+}
+#buttonBar div:hover{
+  color:grey;
   float:left;
   width:25%;
 }
+
 #buttonBar div i{
   float:left;
   width:100%;
   height:100%;
 }
 
+/*  */
 #aboutUsContainer{
   background-color:#E5E5E5;
+  width:100%;
+}
+#aboutUsMainStatement{
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
 }
 #aboutUs{
   width:80%;
@@ -68,21 +85,28 @@
   float:left;
   width:50%;
   height:100%;
+  padding-top:5%
 }
 .aboutUsImg img{
   position:relative;
-  top:20%;
   left:10%;
   width:80%;
   height:80%;
 }
+#img3Container{
+  position:relative;
+  padding-top:10%;
+}
 
 #ourPurposeContainer{
   background-color: #FFFFFF;
+  padding-top:5%;
+  padding-bottom:5%;
 }
 #ourPurpose{
-  width:70%;
+  width:50%;
   text-align:center;
+
 }
 
 #ourStructureContainer{
@@ -91,6 +115,12 @@
 #ourStructure{
   width:80%;
   height:100%;
+}
+#ourStructure p, #ourStructure h2, #ourStructure h3{
+  color:white;
+
+}
+#ourStructure i{
 }
 #ourStructureControll{
   width:80%;
@@ -103,9 +133,15 @@
   width: 70%;
 }
 .structureButton{
+  transition: color 0.5s;
   position:relative;
   float:left;
   width:25%;
+}
+.structureButton:hover, .structureButton i:hover{
+  transition:color 0.5s;
+  color:gray;
+  cursor:pointer;
 }
 
 #ourStructureDisplay{
@@ -124,7 +160,8 @@
   overflow: auto;
   text-align:center;
   width:80%;
-  background-color:grey;
+  background-color:#DCD9D9;
+  color:rgba(128,128,128,0.75);
 }
 .membersTitleContainer{
   width:100%;
@@ -164,6 +201,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+}
+.logoMembers:hover{
+  transition: box-shadow 0.5s;
+  box-shadow: 3px 3px 3px 3px gold;
 }
 .logoThreeMembers{
   width:20%;
