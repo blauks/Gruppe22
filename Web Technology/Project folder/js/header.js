@@ -2,14 +2,12 @@
 //remember to add an empty header with ID=head at the top of the HTML document
 
 function removeTransparentBackground(){
+    transparentBackground.removeChild(whoAreYou);
     document.body.removeChild(transparentBackground);
-    document.body.removeChild(whoAreYou);
 }
 
 function getInvolvedAnimation(){
     document.body.appendChild(transparentBackground);
-    clickBox1.style.margin = "0px 30%";
-    clickBox2.style.margin = "0px 50.5%";
     transparentBackground.setAttribute("id", "transparentBackground");
     let x = 1;
     let stage = 0;
@@ -36,8 +34,6 @@ function getInvolvedAnimation(){
                 clearInterval(moveBox);
             }
         }
-
-
 
         clickBox1.style.margin = x + "px 30%";
         clickBox2.style.margin = x + "px 50.5%";
