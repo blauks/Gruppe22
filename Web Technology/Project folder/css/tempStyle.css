@@ -212,7 +212,7 @@ a:hover {
 
 .footer {
     position:fixed;
-    bottom:10px;
+    /* bottom:10px; */
     height: 150px;
     background-color:#C32323;
     color:white;
@@ -225,7 +225,7 @@ a:hover {
     bottom:0px;
     right:0px;
     height:150px;
-    z-index:1; 
+    z-index:1;
     opacity:0.5;
 }
 @media screen and (max-width: 600px){
