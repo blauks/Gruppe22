@@ -63,7 +63,7 @@ function hideBar(){
 document.getElementById("email").addEventListener("keyup", function(event) {
 	event.preventDefault();
 	if (event.keyCode === 13){
-		window.alert("You have subscribed!");
+		window.alert("You are now subscribed to our newsletters!");
 	}
 });
 
