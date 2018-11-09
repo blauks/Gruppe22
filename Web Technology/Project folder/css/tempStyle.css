@@ -168,15 +168,24 @@ a:hover {
 	width: 47vw;
 }
 
-#articles li {border-bottom: solid 2px #DCD9D9;}
+#articles>ul>li {border-bottom: solid 2px #DCD9D9;}
 
 #articles div {display: none;}
 
-.newsContent {display: none;}
+.articleContent {display: none;}
 
-::-webkit-scrollbar {
+::-webkit-scrollbar { /*hides the scrollbar next to the articles*/
     width: 0px;
     background: transparent;
+}
+
+.date{
+	display: inline-block;
+}
+
+.author{
+	display: inline-block;
+	font-style: italic;
 }
 
 #righthandside{
@@ -269,22 +278,12 @@ a:hover {
 	background: #C32323;
 	color: white;
 	text-align: center;
-	/*
-	 -webkit-transition: width 2s;
-    transition: width 2s;
-	*/
 }
 
 #subscribe>h3 {
 	position: relative;
 	bottom: 10px;
 }
-
-/*
-#subscribe:hover{
-	width: 0%;
-}
-*/
 
 #email{
 	box-sizing: border-box;
@@ -296,6 +295,7 @@ a:hover {
 	Font-Size: 22px;
 	Line-Height: 28px;
 	Letter-Spacing: 2px;
+	border-color: #C32323;
 }
 
 .month{
@@ -333,10 +333,6 @@ a:hover {
 
 #months .activeMonth{
 	display: inline-block;
-}
-
-#months .inactiveMonth{
-	display: none;
 }
 
 .weekdays{
@@ -378,6 +374,17 @@ a:hover {
 .projectsBanner { background-image:url('../img/ProjectImages/projectsBanner.jpg'); }
 
 #map{width:100%;}
+
+.imageID {
+	display: none;
+}
+
+#articleImages .activeMap{
+	display: block;
+	
+	transition: opacity 1s;
+}
+
 
 footer {
     width:100vw;
