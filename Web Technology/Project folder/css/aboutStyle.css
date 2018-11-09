@@ -155,13 +155,13 @@ h4{
 
 #ourMembersContainer{
   background-color:#FFFFFF;
-
 }
 
 #ourMembers{
-  overflow: hidden;
+  overflow: auto;
   text-align:center;
   width:100%;
+  height:100%;
   background-color:#DCD9D9;
   color:rgba(128,128,128,0.75);
 }
@@ -208,6 +208,7 @@ h4{
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+  padding-bottom:0;
 }
 .logoMembers:hover{
   transition: box-shadow 0.5s;
