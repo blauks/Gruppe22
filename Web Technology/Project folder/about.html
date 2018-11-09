@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="css/tempStyle.css" type="text/css">
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/mainStyle.css" type="text/css">
     <link rel="stylesheet" href="css/aboutStyle.css" type="text/css">
     <link rel="stylesheet" href="css/header.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -58,20 +60,20 @@
             </div>
             <div class="aboutUsImg">
               <div class="imgContainer">
-                <img src="./img/about/excavationImg.jpg">
+                <img src="./img/about/excavationImg.jpg" alt="picture of excavation">
               </div>
             </div>
             </div>
           <div class="centralized" id="howEPRMWork">
             <div id="howEPRMWorkDesktopImage" class="aboutUsImg">
-              <img src="./img/about/gearsImg.jpg">
+              <img src="./img/about/gearsImg.jpg" alt="picture of industrial gears">
             </div>
             <div class="aboutUsText">
               <h2><u>How does EPRM work?</u></h2>
               <p>Together with other partners, the EPRM will stimulate and increase the demand for responsible 3TG minerals. It will encourage sourcing channels for responsible minerals that will enable suppliers to identify and mitigate risks. Furthermore, the EPRM will motivate supply chain actors and other partners to support mines and local mining communities to improve their practices to produce responsibly and create access to markets.</p>
             </div>
             <div id="howEPRMWorkMobileImage" class="aboutUsImg" >
-              <img src="./img/about/gearsImg.jpg">
+              <img src="./img/about/gearsImg.jpg" alt="picture of industrial gears">
             </div>
           </div>
           <div class="centralized" id="OurObjectives">
@@ -85,7 +87,7 @@
                 </ul>
               </div>
               <div class="aboutUsImg" id="img3Container">
-                <img src="./img/about/miningSiteImg.jpg">
+                <img src="./img/about/miningSiteImg.jpg" alt="picture of a mining site">
               </div>
           </div>
         </div>
@@ -113,7 +115,7 @@
                   <i id="civilSocietyButtonIcon" class="material-icons md-48">location_city</i>
                 </div>
                 <div class="structureButton" onclick="structureDisplay(3);">
-                  <h3>Insitutions</h3>
+                  <h3>Institutions</h3>
                   <i id="GovernmentsAndInstitutionsButtonIcon" class="material-icons md-48">account_balance</i>
                 </div>
                 <div class="structureButton" onclick="structureDisplay(4);">
@@ -135,16 +137,17 @@
     <div class="aboutContainer" id="ourMembersContainer">
       <div class="centralized" id="ourMembers">
         <h2>Members of the <b>EPRM</b></h2>
-        <div class="membersTitleContainer"></div>
-          <div class="membersTitle">
-            <h3>Regular members</h3>
+        <div class="membersTitleContainer">
+          <div class="membersTitle membersTitleLeft" >
+            <h3>Regular</h3>
           </div>
           <div class="membersTitle">
-            <h3>Strategic members</h3>
+            <h3>Strategic</h3>
           </div>
-          <div class="membersTitle">
-            <h3>Basic members</h3>
+          <div class="membersTitle membersTitleRight">
+            <h3>Basic</h3>
           </div>
+        </div>
         <div class="topMembers" id="topMembers1">
           <div class="members threeMembers">
           </div>
@@ -153,15 +156,16 @@
           <div class="members threeMembers">
           </div>
         </div>
-        <div class="membersTitleContainer"></div>
-          <div class="membersTitle">
+        <div class="membersTitleContainer">
+          <div class="membersTitle membersTitleLeft">
             <h3>Institutions</h3>
           </div>
           <div class="membersTitle">
             <h3>Civil Society Actors</h3>
           </div>
-          <div class="membersTitle">
+          <div class="membersTitle membersTitleRight">
             <h3>Observers</h3>
+          </div>
           </div>
         <div class="topMembers" id="topMembers2">
           <div class="members threeMembers">
@@ -175,8 +179,8 @@
       <br>
       <br>
     </div>
-  <script type="text/javascript" src="./js/header.js"></script>
-  <script type="text/javascript" src="./js/footer.js"></script>
-  <script type="text/javascript" src="./js/about.js"></script>
+  <script  src="./js/header.js"></script>
+  <script  src="./js/footer.js"></script>
+  <script  src="./js/about.js"></script>
   </body>
 </html>

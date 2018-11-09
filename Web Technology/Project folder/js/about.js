@@ -1,11 +1,15 @@
+//membersites used for the members display
 const membersSite = ["https://www.tatasteel.com/", "https://www8.hp.com/nl/nl/home.html", "https://www.umicore.com/", "https://www.apple.com", "https://www.philips.co.uk", "https://www.internationaltin.org/", "https://www.intel.com",
  "https://www.nxp.com/", "http://www.valcambi.com/home/", "https://www.fairphone.com/nl/", "http://www.responsiblemineralsinitiative.org/", "https://www.tanb.org/index", "http://www.oecd.org/", "https://www.unenvironment.org/",
  "https://ec.europa.eu/europeaid/general_en",  "http://www.responsiblemines.org/en/", "http://ipisresearch.be/", "https://www.solidaridadnetwork.org/", "https://www.pactworld.org/", "https://www.diakonia.se/en/", "https://www.cordaid.org/nl/",
  "https://www.government.nl/ministries/ministry-of-foreign-affairs", "https://www.bmz.de/en/" , "https://www.gov.uk/government/organisations/foreign-commonwealth-office"];
-
-drawMembers();
 let cooldown = false;
+//displays all the members icons
+drawMembers();
+
 structureDisplay(1);
+
+
 
 
 function structureDisplay(structurePage){
@@ -42,11 +46,11 @@ function structureDisplay(structurePage){
           title.innerHTML = titleContent;
           paragraph.innerHTML = paragraphContent;
           appearOpacity(title,paragraph);
-        },700);
+        },400);
     }else{
       setTimeout(function(){
         cooldown=false;
-      },500);
+      },200);
     }
 }
 
@@ -60,7 +64,7 @@ function fadeOpacity(title, paragraph){
     }
     title.style.opacity = opacity;
     paragraph.style.opacity = opacity;
-    opacity = opacity - 0.1;
+    opacity = opacity - 0.2;
   }, 25);
 }
 function appearOpacity(title, paragraph){
@@ -73,29 +77,30 @@ function appearOpacity(title, paragraph){
     }
     title.style.opacity = opacity;
     paragraph.style.opacity = opacity;
-    opacity = opacity + 0.1;
-  }, 50);
+    opacity = opacity + 0.2;
+  }, 25);
 }
 
 
 //itterates through all the logos, placing them as backgrounds in a div, and appnds them in groups of 3 - 6 - 3, two times
 function drawMembers(){
 
+
   let imgPath = "url('img/iconsAbout/logo"
   let imgCounter = 0; //counter is used to specify which logo
   let row = document.getElementById("topMembers1");
-  let groups = row.childNodes;
-  let position = 0;
+  let groups = row.childNodes; //represents group container divs thats in each row
   let positionDiv = groups[1]; //groups have to be index of 1, 3 or 5, as thats the indexes of the container divs
-  console.log(imgCounter)
-  console.log(groups)
 
-  for (let y = 0; y <2; y++){
-    for (let i = 0; i<=11; i++){
+
+  for (let y = 0; y <2; y++){ //loops for each row
+    for (let i = 0; i<=11; i++){ //loops for each icon in a row
+
       let logo = document.createElement("div");
-
       let individualPath = imgPath + imgCounter +".jpg')";
-      logo.style.backgroundImage = individualPath;
+      logo.style.backgroundImage = individualPath; //uses the path to set the backgorund image to the logo icon
+
+
       //specifies if it is going into a three group or six group
       if (i <= 2){
         logo.className=("logoMembers logoThreeMembers");
@@ -109,19 +114,26 @@ function drawMembers(){
         logo.className=("logoMembers logoThreeMembers");
         positionDiv = groups[5];
       }
+      //makes the openMemberSite method run with the right index onclick
       let attribute = "openMemberSite(" + imgCounter + ");"
       logo.setAttribute("onclick", attribute);
+
       positionDiv.appendChild(logo);
       imgCounter++;
     }
-    //switches to next line
+
+
+    //switches to next line and gathers the next group
     row = document.getElementById("topMembers2");
     groups = row.childNodes;
   }
 }
 
+// opens the website that corresponds to the logo (defined by the index of the logo and the index of the websites array)
 function openMemberSite(imgNumber){
-  console.log("ran" + imgNumber);
    window.open(membersSite[imgNumber]);
 
+}
+function memberTextHover(iconGroup){
+  iconGroup.children.transition("")
 }

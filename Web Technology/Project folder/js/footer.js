@@ -11,7 +11,7 @@ function makeFooter(){
   let contactInfo = document.createElement("p");
   let findUsHereHeader = document.createElement("p");
   let contactInfoHeader = document.createElement("p");
-  let logoImg = document.createElement("img"); //todo add image
+  let logoImg = document.createElement("img"); 
 
   //assigns content to the text elements
   findUsHereHeader.innerHTML="FIND US HERE";
@@ -23,7 +23,6 @@ function makeFooter(){
 
   //addding path to ..img/footerLogo.png image
   logoImg.src = "img/footerLogo.png";
-
 
   //assignts style to footer
   footer.classList.add("footer");
