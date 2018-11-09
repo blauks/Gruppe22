@@ -111,7 +111,6 @@ h4{
 #ourPurpose{
   width:50%;
   text-align:center;
-
 }
 
 #ourStructureContainer{
@@ -123,7 +122,6 @@ h4{
 }
 #ourStructure p, #ourStructure h2, #ourStructure h3{
   color:white;
-
 }
 #ourStructureControll{
   width:80%;
@@ -147,8 +145,6 @@ h4{
   color:gray;
   cursor:pointer;
 }
-.structureButton i{
-}
 
 #ourStructureDisplay{
   overflow:auto;
@@ -163,19 +159,21 @@ h4{
 }
 
 #ourMembers{
-  overflow: auto;
+  overflow: hidden;
   text-align:center;
-  width:80%;
+  width:100%;
   background-color:#DCD9D9;
   color:rgba(128,128,128,0.75);
 }
 .membersTitleContainer{
   width:100%;
   float:left;
+  height:100%;
 }
 .membersTitle{
   width:33%;
   float:left;
+  height:100%;
 }
 
 .topMembers{
@@ -185,22 +183,25 @@ h4{
 
 .members{
   padding:20px 0px 20px 0px;
-  height:80px;
+  height:100%;
   float:left;
 
 }
 .threeMembers{
+  height:100%;
   width:25%;
 }
 
 .centerMembers{
+  height:100%;
   width:50%;
 }
 
 .logoMembers{
   position:relative;
   left:15%;
-  height:70%;
+  height: 5vw;
+  width: 6vw;
   float:left;
   border-radius: 50%;
   background-size: contain;
@@ -211,7 +212,7 @@ h4{
 .logoMembers:hover{
   transition: box-shadow 0.5s;
   cursor: pointer;
-  box-shadow: 0px 0px 3px 3px gold;
+  box-shadow: 0px 0px 10px 5px #C32323;
 }
 .logoThreeMembers{
   width:20%;
@@ -245,6 +246,31 @@ h4{
     #ourStructureControll h3, #ourStructureDisplay p{
       font-size:10px;
     }
+    .logoMembers{
+      height: 50px;
+      width: 50px;
+      left:3%;
+    }
+    .membersTitle h3{
+      font-size: 20px;
+    }
+    @media all and (max-width:750px){
+      .logoMembers{
+        height:42px;
+        width:42px;
+        left:5%;
+      }
+      .membersTitle h3{
+        font-size: 16px;
+      }
+    }
+    @media all and (max-width:750px){
+      .logoMembers{
+        height:35px;
+        width:35px;
+        left:2%;
+      }
+
     @media all and (max-width:430px){
       #buttonBar a div h2{
         font-size: 12px;
@@ -270,5 +296,6 @@ h4{
       #ourStructureControll h3, #ourStructureDisplay p{
         font-size:10px;
       }
+
     }
 }
