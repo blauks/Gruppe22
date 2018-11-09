@@ -1,22 +1,11 @@
-/*function collapse(element) {
-	var width = 100;
-	var id = setInterval(frame, 5);
-	
-	function frame() {
-		if (width <= 1) {
-			clearInterval(id);
-			element.style.display = "none";
-		} 
-		element.style.width = width;
-		width -= width * 0.1;
-	}
-}
-*/
-
 /*Collapsible articles + Calendar functionality*/
-
 var coll = document.getElementsByClassName("collapsible")
+var activeMonths = document.getElementsByClassName("activeMonth")
+var activeDays = document.getElementsByClassName("activeDate")
+var calendarMonths = document.getElementById("months");
+var calendarDays = document.getElementById("days");
 var i;
+
 
 for (i=0; i < coll.length; i++) {
 	coll[i].addEventListener("click", function() {
@@ -28,7 +17,16 @@ for (i=0; i < coll.length; i++) {
 			content.style.display = "block";
 		}
 		
+		for (i = 0; i < activeMonths.length; i++) {
+			activeMonths[i].classList.toggle("activeMonth");
+		}
+		
+		for (i = 0; i < activeDays.length; i++) {
+			activeDays[i].classList.toggle("activeDate");
+		}
+		
 		var date = content.childNodes[1].innerHTML; /*Gets article date*/
+		
 		if (date.charAt(1) != "."){ /*Gets article day*/
 			var day = date.charAt(0) + date.charAt(1);
 			if (date.charAt(4) != ".") /*Gets article moth*/
@@ -43,51 +41,31 @@ for (i=0; i < coll.length; i++) {
 			else
 				var month = date.charAt(2);
 		}
-		
-		var calendarDays = document.getElementById("days");
-		var calendarMonths = document.getElementById("months");
-		
-		/*
-		var j;
-		var k;
-		
-		for (j = 0; j < 12; j++){
-			if (j == month)
-				calendarMonths.childNodes[j*2 - 1].classList.toggle("activeMonth"); /*Sets correct month to active*/
-			/*
-			else 
-				calendarMonths.childNodes[j*2 - 1].classList.toggle("inactiveMonth"); /*Sets other monts to inactive
-		}
-		*/
+
 		calendarMonths.childNodes[month*2 - 1].classList.toggle("activeMonth"); /*Sets correct month to active*/
 		calendarDays.childNodes[day*2 - 1].classList.toggle("activeDate"); /*Sets correct day to active*/
 	});
 }
 
 /*Subscribe animation*/
-/*
-console.log(document.getElementById("subscribe").offsetWidth);
+var bar = document.getElementById("subscribe");
+var barText = bar.firstChild;
+bar.addEventListener("mouseover", hideBar);
 
-function shrink() {
-	var elem = document.getElementById("subscribe");
-	var width = elem.offsetWidth;
-	console.log(width);
-	var id = setInterval(frame, 5);
-	function frame(){
-		if (width == 0){
-			clearInterval(id);
-		}
-		else {
-			console.log(width);
-			width = width - 10;
-			document.getElementById("subscribe").offsetWidth = width;
-		}
-	}
+function hideBar(){
+	bar.style.transition = "width 2s";
+	bar.style.width = "0%";
+	barText.style.transition = "opacity 0.5s";
+	barText.style.opacity = "0";
 }
-*/
 
-
-
+/*Input popup*/
+document.getElementById("email").addEventListener("keyup", function(event) {
+	event.preventDefault();
+	if (event.keyCode === 13){
+		window.alert("You have subscribed!");
+	}
+});
 
 
 
