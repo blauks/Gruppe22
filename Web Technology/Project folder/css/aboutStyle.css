@@ -23,7 +23,7 @@ h4{
 }
 
 #buttonBar{
-  height: 100px;
+  height: 100%;
   width: 70%;
   text-align: center;
   background-color: white;
@@ -71,6 +71,10 @@ h4{
   position:relative;
   overflow:auto;
 
+}
+/* purely for the mobile view */
+#howEPRMWorkMobileImage{
+  display:none;
 }
 
 .aboutUsText{
@@ -215,9 +219,32 @@ h4{
   margin-right:2.5%;
 }
 
-@media all and (max-width:480px){
-  #buttonBarContainer div {
-    height:;
-  }
 
+
+
+  @media all and (max-width:900px){
+    .material-icons.md-48 { font-size: 40px }
+    #buttonBar a div h2{
+      font-size: 15px;
+    }
+    @media all and (max-width:430px){
+      #buttonBar a div h2{
+        font-size: 12px;
+      }
+      #aboutUsContent div{
+        width:100%;
+      }
+      #howEPRMWorkMobileImage{
+        display:inline;
+      }
+      #howEPRMWorkDesktopImage{
+        display:none;
+      }
+      #aboutUsContent div img{
+        position:relative;
+      }
+      #ourPurpose{
+        width:80%;
+      }
+    }
 }
