@@ -3,6 +3,7 @@ function buttonHoverHandler(e) {
     let text = document.getElementById(e.id+'Text');
     let icon = document.getElementById(e.id+'Icon')
     icon.style.transition = 'all 0.7s';
+    icon.style.cursor = "pointer";
     button.style.height = '12vh';
     button.style.borderColor = '#02a19c';
     icon.style.color = '#02a19c';

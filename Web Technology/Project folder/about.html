@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/tempStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/aboutStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="utf-8">
-    <title></title>
+    <title>About the EPRM</title>
   </head>
   <body>
-    <h1> This is the about thingy, merly for footer testing </h1>
-    <script type="text/javascript" src="js/footer.js"></script>
+    <header id="head"></header>
+    <div class="bannerImg aboutBanner">
+        <div class="bannerTitle">
+            <div class="bannerText">Know more about the <b>EPRM</b></div>
+            <div class="bannerBlurry aboutBanner"></div>
+        </div>
+    </div>
+    <div class="aboutContainer" id="buttonBarContainer">
+      <div class="centralized" id="buttonBar">
+        <a href="#aboutUs">
+        <div id=aboutUsButton >
+          <h2>About us</h2>
+          <i id="aboutUsButtonIcon" class="material-icons md-48">help_outline</i>
+        </div>
+        </a>
+        <a href="#ourPurpose">
+        <div id=ourPurposeButton>
+          <h2>Purpose</h2>
+          <i id="PurposeButtonIcon" class="material-icons md-48">public</i>
+        </div>
+        </a>
+        <a href="#ourStructure">
+        <div id="ourStructureButton">
+          <h2>Structure</h2>
+          <i id="ourStructureButtonIcon" class="material-icons md-48">line_style</i>
+        </div>
+      </a>
+      <a href="#ourMembers">
+        <div id=ourMembersButton>
+          <h2>Members</h2>
+          <i id="ourMembersButtonIcon" class="material-icons md-48">people</i>
+        </div>
+      </a>
+        </div>
+      </div>
+    <div class="aboutContainer" id="aboutUsContainer">
+      <div id="aboutUs">
+        <div id="aboutUsMainStatement">
+          <h2><b>Learn</b> about us</h2>
+          <p><b>The European Partnership for Responsible Minerals (EPRM) is a multi-stakeholder partnership aiming to increase the proportion of responsibly-produced minerals from conflict-affected and high risk areas and to support the socially responsible extraction of minerals that contributes to local development.</b></p>
+        </div>
+        <div id="aboutUsContent">
+          <div class="centralized" id="WhyEPRM">
+            <div class="aboutUsText">
+              <h2><u>Why choose the EPRM</u></h2>
+              <p> A number of regions in the world  that are endowed with these minerals, for example Africa’s Great Lakes Region and Colombia, are experiencing prolonged violent conflicts and severe human rights abuses. International trade in minerals can play a significant role in financing and perpetuating human rights violations in these conflict regions. It is therefore imperative to break the link between mineral extraction and conflict.</p>
+            </div>
+            <div class="aboutUsImg">
+              <div class="imgContainer">
+                <img src="./img/about/excavationImg.jpg">
+              </div>
+            </div>
+            </div>
+          <div class="centralized" id="howEPRMWork">
+            <div id="howEPRMWorkDesktopImage" class="aboutUsImg">
+              <img src="./img/about/gearsImg.jpg">
+            </div>
+            <div class="aboutUsText">
+              <h2><u>How does EPRM work?</u></h2>
+              <p>Together with other partners, the EPRM will stimulate and increase the demand for responsible 3TG minerals. It will encourage sourcing channels for responsible minerals that will enable suppliers to identify and mitigate risks. Furthermore, the EPRM will motivate supply chain actors and other partners to support mines and local mining communities to improve their practices to produce responsibly and create access to markets.</p>
+            </div>
+            <div id="howEPRMWorkMobileImage" class="aboutUsImg" >
+              <img src="./img/about/gearsImg.jpg">
+            </div>
+          </div>
+          <div class="centralized" id="OurObjectives">
+              <div class="aboutUsText">
+                <h2><u>Our objectives</u></h2>
+                <ul>
+                  <li>EPRM will develop and operate a knowledge platform to inform policy and supply chain actors and where participants can share knowledge on due diligence;</li>
+                  <li>EPRM will set up activities for SMEs in Europe to increase their awareness of the importance of responsible mineral sourcing and production;</li>
+                  <li>EPRM will facilitate connections between upstream, midstream and downstream actors.</li>
+                  <li>EPRM will focus on aligning mining intervention strategies and pool and expand resources to support artisanal and small-scale mines to improve their practices, so they produce responsibly and can ultimately access global markets.</li>
+                </ul>
+              </div>
+              <div class="aboutUsImg" id="img3Container">
+                <img src="./img/about/miningSiteImg.jpg">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutContainer" id="ourPurposeContainer">
+      <div class="centralized" id="ourPurpose">
+        <h2><u>Our purpose</u></h2>
+        <p>European Partnership for Responsible Minerals is a multi-stakeholder partnership established with the goal to create better social and economic conditions for mine workers and local mining communities, by increasing the number of mines that adopt responsible mining practices in Conflict and High Risk Areas (CAHRAs).</p>
+      </div>
+    </div>
+    <div class="aboutContainer" id="ourStructureContainer">
+      <br>
+      <br>
+      <div class="centralized" id="ourStructure">
+        <div class="centralized" id="ourStructureControll">
+            <h2>The Structure of the<br><b>EPRM</b></h2>
+              <div class="centralized" id=structureButtonBar>
+                <div class="structureButton" onclick="structureDisplay(1);">
+                  <h3>Supply chain</h3>
+                  <i id="supplyChainButtonIcon" class="material-icons md-48">local_shipping</i>
+                </div>
+                <div class="structureButton" onclick="structureDisplay(2);">
+                  <h3>Civil society</h3>
+                  <i id="civilSocietyButtonIcon" class="material-icons md-48">location_city</i>
+                </div>
+                <div class="structureButton" onclick="structureDisplay(3);">
+                  <h3>Insitutions</h3>
+                  <i id="GovernmentsAndInstitutionsButtonIcon" class="material-icons md-48">account_balance</i>
+                </div>
+                <div class="structureButton" onclick="structureDisplay(4);">
+                  <h3>Observers</h3>
+                  <i id="observersButtonIcon" class="material-icons md-48">visibility</i>
+                </div>
+              </div>
+          </div>
+          <div class="centralized" id="ourStructureDisplay">
+            <h2 id="ourStructureTitle"></h2>
+            <p id="ourStructureParagraph"></p>
+          </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div class="aboutContainer" id="ourMembersContainer">
+      <div class="centralized" id="ourMembers">
+        <h2>Members of the <b>EPRM</b></h2>
+        <div class="membersTitleContainer"></div>
+          <div class="membersTitle">
+            <h3>Regular members</h3>
+          </div>
+          <div class="membersTitle">
+            <h3>Strategic members</h3>
+          </div>
+          <div class="membersTitle">
+            <h3>Basic members</h3>
+          </div>
+        <div class="topMembers" id="topMembers1">
+          <div class="members threeMembers">
+          </div>
+          <div class="members centerMembers">
+          </div>
+          <div class="members threeMembers">
+          </div>
+        </div>
+        <div class="membersTitleContainer"></div>
+          <div class="membersTitle">
+            <h3>Institutions</h3>
+          </div>
+          <div class="membersTitle">
+            <h3>Civil Society Actors</h3>
+          </div>
+          <div class="membersTitle">
+            <h3>Observers</h3>
+          </div>
+        <div class="topMembers" id="topMembers2">
+          <div class="members threeMembers">
+          </div>
+          <div class="members centerMembers">
+          </div>
+          <div class="members threeMembers">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+  <script type="text/javascript" src="./js/header.js"></script>
+  <script type="text/javascript" src="./js/footer.js"></script>
+  <script type="text/javascript" src="./js/about.js"></script>
   </body>
 </html>

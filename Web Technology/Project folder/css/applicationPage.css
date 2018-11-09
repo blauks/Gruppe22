@@ -1,0 +1,38 @@
+
+#applicationPage{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+@media all and (max-width: 640px){
+    #applicationPage{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+.criterias {
+    border: 1px solid darkgray;
+}
+
+.criterias:hover{
+    transition: background-color 0.4s;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.criteriaHeaders{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.informationContainers{
+    display: none;
+    position: relative;
+    text-align: left;
+    left: 5px;
+}
