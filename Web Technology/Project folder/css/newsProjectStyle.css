@@ -64,14 +64,14 @@
 	 }
 }
 
-#articleImages>img {
+.articleImages>img {
 	display: none;
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-#articleImages .activeImage{
+.articleImages .activeImage{
 	display: block;
 }
 
@@ -149,19 +149,6 @@
 	display: inline-block;
 }
 
-.weekdays{
-	text-align: center;
-	margin: 0;
-	padding: 10px 3px;
-	background-color: #ddd;
-}
-
-.weekdays li{
-	display: inline-block;
-	width: 12%;
-	color: #666;
-}
-
 #days{
 	padding: 10px 0 0 10px; 
 	background: #eee;
@@ -193,7 +180,7 @@
 	display: none;
 }
 
-#articleImages .activeMap{
+.articleImages .activeMap{
 	display: block;
 	
 	transition: opacity 1s;
