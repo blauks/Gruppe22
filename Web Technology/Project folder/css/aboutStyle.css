@@ -150,7 +150,7 @@ h4{
   overflow:auto;
   text-align:center;
   width:80%;
-  background-color: rgba(86, 204, 246);
+  background-color: rgb(86, 204, 246);
 }
 
 #ourMembersContainer{
@@ -158,7 +158,7 @@ h4{
 }
 
 #ourMembers{
-  overflow: auto;
+  overflow: hidden;
   text-align:center;
   width:100%;
   height:100%;
@@ -265,38 +265,37 @@ h4{
         font-size: 16px;
       }
     }
-    @media all and (max-width:750px){
-      .logoMembers{
-        height:35px;
-        width:35px;
-        left:2%;
-      }
-
-    @media all and (max-width:430px){
-      #buttonBar a div h2{
-        font-size: 12px;
-      }
-      #howEPRMWorkMobileImage{
-        display:inline;
-      }
-      #howEPRMWorkDesktopImage{
-        display:none;
-      }
-      #ourPurpose{
-        width:80%;
-      }
-      #aboutUsMainStatement{
-        width:90%;
-      }
-      #ourStructureControll, #ourStructureDisplay, #aboutUsContent div{
-        width:100%;
-      }
-      #ourStructureControll h2, #ourStructureDisplay h2{
-        font-size:25px;
-      }
-      #ourStructureControll h3, #ourStructureDisplay p{
-        font-size:10px;
-      }
-
+@media all and (max-width:750px){
+  .logoMembers{
+    height:35px;
+    width:35px;
+    left:2%;
     }
+
+  @media all and (max-width:430px){
+    #buttonBar a div h2{
+      font-size: 12px;
+    }
+    #howEPRMWorkMobileImage{
+    display:inline;
+    }
+    #howEPRMWorkDesktopImage{
+    display:none;
+    }
+    #ourPurpose{
+    width:80%;
+    }
+    #aboutUsMainStatement{
+    width:90%;
+    }
+    #ourStructureControll, #ourStructureDisplay, #aboutUsContent div{
+    width:100%;
+    }
+    #ourStructureControll h2, #ourStructureDisplay h2{
+    font-size:25px;
+    }
+    #ourStructureControll h3, #ourStructureDisplay p{
+    font-size:10px;
+    }
+  }
 }
