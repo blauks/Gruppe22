@@ -61,6 +61,8 @@ whoAreYou.appendChild(document.createTextNode("Which of these describes you best
 clickBox1.setAttribute("onclick","location.href='application.html'");
 clickBox2.setAttribute("onclick","location.href='CallsForProposals.html'")
 
+clickBox1.setAttribute("Alt","upstream companies picture");
+clickBox2.setAttribute("Alt","downstream companies picture");
 
 //For navbar
 const logoLeft = document.createElement("img");
