@@ -47,7 +47,9 @@
 }
 
 #righthandside{
-	position: absolute; 
+	position: absolute;
+	overflow: auto;
+	height: 90%;
 	font-family: 'Raleway';
 	top: 5%;
 	left: 62%;
@@ -130,16 +132,6 @@
 	letter-spacing: 3px;
 }
 
-.month .prev{
-	float: left;
-	padding-top: 10px;
-}
-
-.month .next{
-	float: right;
-	padding-top: 10px;
-}
-
 #months li{
 	display: none;
 }
@@ -156,12 +148,12 @@
 
 #days li{
 	display: inline-block;
-	width: 5%;
+	width: 7.8%;
 	text-align: center;
 	font-size: 12px;
 	color: #777;
-	padding: 10px;
-	margin: 5px;
+	padding-top: 5px;
+	margin: 0;
 }
 
 #days .activeDate{
