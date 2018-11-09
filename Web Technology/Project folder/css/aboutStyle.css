@@ -20,6 +20,7 @@ h4{
   color:black;
   height:100%;
   padding-bottom:2.5%;
+  user-select: none;
 }
 
 #buttonBar{
@@ -124,8 +125,6 @@ h4{
   color:white;
 
 }
-#ourStructure i{
-}
 #ourStructureControll{
   width:80%;
   overflow:auto;
@@ -141,11 +140,14 @@ h4{
   position:relative;
   float:left;
   width:25%;
+  user-select: none;
 }
 .structureButton:hover, .structureButton i:hover{
   transition:color 0.5s;
   color:gray;
   cursor:pointer;
+}
+.structureButton i{
 }
 
 #ourStructureDisplay{
@@ -208,7 +210,8 @@ h4{
 }
 .logoMembers:hover{
   transition: box-shadow 0.5s;
-  box-shadow: 3px 3px 3px 3px gold;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 3px gold;
 }
 .logoThreeMembers{
   width:20%;
@@ -219,6 +222,15 @@ h4{
   margin-right:2.5%;
 }
 
+.membersTitleLeft{
+  position:relative;
+  right:2.5%;
+}
+.membersTitleRight{
+  position:relative;
+  left:2.5%;
+}
+
 
 
 
@@ -227,12 +239,15 @@ h4{
     #buttonBar a div h2{
       font-size: 15px;
     }
+    #ourStructureControll h2, #ourStructureDisplay h2{
+      font-size:25px;
+    }
+    #ourStructureControll h3, #ourStructureDisplay p{
+      font-size:10px;
+    }
     @media all and (max-width:430px){
       #buttonBar a div h2{
         font-size: 12px;
-      }
-      #aboutUsContent div{
-        width:100%;
       }
       #howEPRMWorkMobileImage{
         display:inline;
@@ -240,11 +255,20 @@ h4{
       #howEPRMWorkDesktopImage{
         display:none;
       }
-      #aboutUsContent div img{
-        position:relative;
-      }
       #ourPurpose{
         width:80%;
+      }
+      #aboutUsMainStatement{
+        width:90%;
+      }
+      #ourStructureControll, #ourStructureDisplay, #aboutUsContent div{
+        width:100%;
+      }
+      #ourStructureControll h2, #ourStructureDisplay h2{
+        font-size:25px;
+      }
+      #ourStructureControll h3, #ourStructureDisplay p{
+        font-size:10px;
       }
     }
 }
