@@ -381,7 +381,7 @@ a:hover {
 
 #articleImages .activeMap{
 	display: block;
-	
+
 	transition: opacity 1s;
 }
 
