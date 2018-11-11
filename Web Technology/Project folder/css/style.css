@@ -87,7 +87,7 @@ a:active {
   font-family: 'Raleway', serif;
   font-size: 24px;
   font-weight: bold;
-  
+
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
@@ -196,4 +196,3 @@ a:active {
   width: 40%;
   float: right;
 }
-
