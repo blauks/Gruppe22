@@ -28,7 +28,8 @@
         top: 50px;
         transform: translate(-50%, 0);
     }
-
+    /*Found the values by just adjusting the size a lot of times, this way all the buttons will continue to be 
+    visible to everyone and it looks "ok"*/
     @media all and (max-width: 440px){
         .buttons{
             font-size: 13px;
