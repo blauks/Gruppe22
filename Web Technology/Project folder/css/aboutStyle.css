@@ -32,8 +32,8 @@
   color:black;
   float:left;
   width:25%;
-
 }
+
 #buttonBar div:hover{
   color:grey;
   float:left;
@@ -52,23 +52,25 @@
   background-color:#E5E5E5;
   width:100%;
 }
+
 #aboutUsMainStatement{
   width:60%;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
 }
+
 #aboutUs{
   width:80%;
   margin-left:auto;
   margin-right:auto;
 }
+
 #WhyEPRM,#howEPRMWork, #OurObjectives{
   height: 100%;
   width: 100%;
   position:relative;
   overflow:auto;
-
 }
 
 /* this img is purely for the mobile view */
@@ -106,6 +108,7 @@
   padding-top:5%;
   padding-bottom:5%;
 }
+
 #ourPurpose{
   width:50%;
   text-align:center;
@@ -157,7 +160,6 @@
 }
 
 
-
 /* members display */
 #ourMembersContainer{
   background-color:#FFFFFF;
@@ -171,18 +173,22 @@
   background-color:#DCD9D9;
   color:rgba(128,128,128,0.75);
 }
+
 .membersTitleContainer{
   width:100%;
   float:left;
 }
+
 .membersTitle{
   width:33%;
   float:left;
   height:100%;
 }
+
 .membersTitle h3{
   transition:color 0.5s;
 }
+
 .membersTitle h3:hover{
   color:#C32323;
 }
@@ -221,17 +227,19 @@
   background-position: center;
   background-color: white;
   padding-bottom:0;
-
 }
+
 .logoMembers:hover{
   transition: box-shadow 0.5s;
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #C32323;
 }
+
 .logoThreeMembers{
   width:20%;
   margin-right:5%;
 }
+
 .logoSixMembers{
   width:calc(10%);
   margin-right:2.5%;
@@ -241,6 +249,7 @@
   position:relative;
   right:2.5%;
 }
+
 .membersTitleRight{
   position:relative;
   left:2.5%;
@@ -261,16 +270,14 @@
   #ourStructureControll h3, #ourStructureDisplay p{
     font-size:10px;
   }
-
-    .logoMembers{
-      height: 50px;
-      width: 50px;
-      left:3%;
-    }
-
-    .membersTitle h3{
-      font-size: 20px;
-    }
+  .logoMembers{
+    height: 50px;
+    width: 50px;
+    left:3%;
+  }
+  .membersTitle h3{
+    font-size: 20px;
+  }
   @media all and (max-width:750px){
     .logoMembers{
       height:42px;
@@ -278,16 +285,15 @@
       left:5%;
     }
     .membersTitle h3{
-    font-size: 16px;
+      font-size: 16px;
     }
-}
-@media all and (max-width:750px){
-  .logoMembers{
-    height:35px;
-    width:35px;
-    left:2%;
-    }
-
+  }
+  @media all and (max-width:750px){
+    .logoMembers{
+      height:35px;
+      width:35px;
+      left:2%;
+  }
   @media all and (max-width:430px){
     #buttonBar a div h2{
       font-size: 12px;
@@ -321,4 +327,5 @@
       font-size:10px;
     }
   }
+}
 }
