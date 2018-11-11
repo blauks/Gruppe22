@@ -12,6 +12,7 @@ function getInvolvedAnimation(){
     let x = 1;
     let stage = 0;
     let moveBox = setInterval(moveBoxFunc, 7);
+    /*Creates and performs three different stages for the "looking to contribute" and "looking for contributions" image animations */
     function moveBoxFunc(){
         if(stage == 0){
             x = x*1.1;
