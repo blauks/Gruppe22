@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webtek - P3 Changes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="top">
+        <h1>P3 Changes</h1>
+        <hr />
+        <p> Jonathan Brooks, Nicolai Andre Dalaaker, Bram Goosink, Kristian Lindberg Mikalsen, Line Steen </p>
+        <p> 11 November 2018</p>
+        <a href="http://folk.ntnu.no/jonatbr">Link to our website</a>
+    </header>
+    <div>
+        <h2>Table of Contents</h2>
+        <hr />
+        <ul>
+            <li> <a href="#admin">Administrative Details</a> </li>
+            <li> <a href="#fstructure">File structure</a> </li>
+            <li> <a href="#responsible">File responsible</a> </li>
+            <li> <a href="#changes">Changes</a> </li>
+            <li> <a href="#modularity">Modularity requirements</a> </li>
+            <li> <a href="#minreq">Minimum requirements</a> </li>
+        </ul>
+    </div>
+    <div id="admin">
+        <h2>Administrative details</h2>
+        <hr />
+        <p>The European Partnership for Responsible Minerals (EPRM) is a multi stakeholder partnership that is aiming to improve the working and social conditions of those involved in the extraction and processing of 3TG minerals. The proposed case is to redesign their current <a href="https://europeanpartnership-responsibleminerals.eu/">website</a> to better communicate relevant information to viewers. Whilst the case is based on a real scenario, EPRM itself is not involved, and the produced deliverables will not be employed by the partnership. Instead, the case has been put forward by a group member, Bram Goosink, who is an ex-employee of the EPRM.</p>
+        <p> Our website is located at <a href="http://folk.ntnu.no/jonatbr">http://folk.ntnu.no/jonatbr</a> </p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="fstructure">
+        <h2>File Structure</h2>
+        <hr />
+        <ul>
+            <li>css
+                <ul>
+                    <li>aboutStyle.css</li>
+                    <li>applicationPage.css</li>
+                    <li>header.css</li>
+                    <li>mainStyle.css</li>
+                    <li>newsProjectStyle.css</li>
+                    <li>indexStyle.css</li>
+                </ul>
+            </li>
+            <li>img
+                <ul>
+                    <li>NewsImages
+                        <ul>
+                            <li>ICMM.jpg</li>
+                            <li>dellandimpact.jpg</li>
+                            <li>newsBanner.jpg</li>
+                        </ul>
+                    </li>
+                    <li>ProjectImages
+                        <ul>
+                            <li>MarketProgramme.jpg</li>
+                            <li>africaMap.jpg</li>
+                            <li>blockchain.jpg</li>
+                            <li>default.jpg</li>
+                            <li>incidentrep.jpg</li>
+                            <li>indonesia.png</li>
+                            <li>indonesiaMap.jpg</li>
+                            <li>map.jpg</li>
+                            <li>projectsBanner.jpg</li>
+                            <li>responsibleK.jpg</li>
+                            <li>southAmMap.jpg</li>
+                            <li>the arts.jpg</li>
+                            <li>thecapaz.jpg</li>
+                        </ul>
+                    </li>
+                    <li>about
+                        <ul>
+                            <li>excavationImg.jpg</li>
+                            <li>gearsImg.jpg</li>
+                            <li>miningSiteImg.jpg</li>
+                        </ul>
+                    </li>
+                    <li>iconsAbout
+                        <ul>
+                            <li>logo0.jpg</li>
+                            <li>logo1.jpg</li>
+                            <li>logo2.jpg</li>
+                            <li>logo3.jpg</li>
+                            <li>logo4.jpg</li>
+                            <li>logo5.jpg</li>
+                            <li>logo6.jpg</li>
+                            <li>logo7.jpg</li>
+                            <li>logo8.jpg</li>
+                            <li>logo9.jpg</li>
+                            <li>logo10.jpg</li>
+                            <li>logo11.jpg</li>
+                            <li>logo12.jpg</li>
+                            <li>logo13.jpg</li>
+                            <li>logo14.jpg</li>
+                            <li>logo15.jpg</li>
+                            <li>logo16.jpg</li>
+                            <li>logo17.jpg</li>
+                            <li>logo18.jpg</li>
+                            <li>logo19.jpg</li>
+                            <li>logo20.jpg</li>
+                            <li>logo21.jpg</li>
+                            <li>logo22.jpg</li>
+                            <li>logo23.jpg</li>
+                        </ul>
+                    </li>
+                    <li>bannerAbout.jpg</li>
+                    <li>bannerCfp.jpg</li>
+                    <li>bannerFaq.jpg</li>
+                    <li>bannerFm.jpg</li>
+                    <li>downstream.jpg</li>
+                    <li>footerLogo.png</li>
+                    <li>front-page-video.mp4</li>
+                    <li>icon-axe.png</li>
+                    <li>icon-group.png</li>
+                    <li>icon-work.png</li>
+                    <li>logo-left.png</li>
+                    <li>logo-right.png</li>
+                    <li>news1.jpg</li>
+                    <li>news2.jpg</li>
+                    <li>news3.jpg</li>
+                    <li>upstream.jpg</li>
+                </ul>
+            </li>
+            <li>js
+                <ul>
+                    <li>about.js</li>
+                    <li>applicationPage.js</li>
+                    <li>footer.js</li>
+                    <li>handlers.js</li>
+                    <li>header.js</li>
+                    <li>news.js</li>
+                    <li>projects.js</li>
+                </ul>
+            </li>
+            <li>index.html</li>
+            <li>CallsForProposals.html</li>
+            <li>Faq.html</li>
+            <li>ForMiners.html</li>
+            <li>News.html</li>
+            <li>Projects.html</li>
+            <li>about.html</li>
+            <li>application.html</li>
+        </ul>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="responsible">
+        <h2>File Responsible</h2>
+        <hr />
+        <table>
+        <tr>
+            <th>Filename</th>
+            <th>Description</th>
+            <th>In Charge</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td>application.html</td>
+            <td>The application page</td>
+            <td>Jonathan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>applicationPage.js</td>
+            <td>JavaScript for the application page</td>
+            <td>Jonathan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>applicationPage.css</td>
+            <td>Local css for the application page</td>
+            <td>Jonathan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>header.js</td>
+            <td>JavaScript to make the header</td>
+            <td>Jonathan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>header.css</td>
+            <td>CSS to style the header</td>
+            <td>Jonathan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>upstream.jpg</td>
+            <td>"Looking to contribute" picture</td>
+            <td>Jonathan</td>
+            <td>https://unsplash.com/</td>
+        </tr>
+        <tr>
+            <td>downstream.jpg</td>
+            <td>"Looking for contributions" picture</td>
+            <td>Jonathan</td>
+            <td>http://iminco.net/</td>
+        </tr>
+        <tr>
+            <td>logo-left.png</td>
+            <td>Picture of the EPRM logo for the header</td>
+            <td>Bram</td>
+            <td>https://europeanpartnership-responsibleminerals.eu/</td>
+        </tr>
+        <tr>
+            <td>logo-right.png</td>
+            <td>Picture of EPRMs whole name for the header</td>
+            <td>Bram</td>
+            <td>https://europeanpartnership-responsibleminerals.eu/</td>
+        </tr>
+        <tr>
+            <td>CallsForProposals.html</td>
+            <td>The Calls for Proposals  page</td>
+            <td>Kristian</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faq.html</td>
+            <td>The Frequently Asked Questions page</td>
+            <td>Kristian</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ForMiners.html</td>
+            <td>The For Miners page</td>
+            <td>Kristian</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>News.html</td>
+            <td>The News page</td>
+            <td>Line</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Projects.html</td>
+            <td>The Projects page</td>
+            <td>Line</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>about.html</td>
+            <td>The about page</td>
+            <td>Nicolai</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>index.html</td>
+            <td>The main Page</td>
+            <td>Bram</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>about.js</td>
+            <td>Draws the members display with all the icons, and handles the structure infobar, the members display glow and the member display links	</td>
+            <td>Nicolai	</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>footer.js</td>
+            <td>Draws the footer thats used for each page</td>
+            <td>Nicolai	</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>handlers.js</td>
+            <td>Handles the button presses on cfp and fading in of text	</td>
+            <td>Kristian</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>news.js</td>
+            <td>Javascript for the news page</td>
+            <td>Line</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>projects.js	</td>
+            <td>Javascript for the projects page</td>
+            <td>Line</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>bannerAbout.jpg</td>
+            <td>Banner image for the about page</td>
+            <td>Nicolai</td>
+            <td></td>
+        <tr>
+            <td>bannerCfp.jpg</td>
+            <td>Banner image for calls for proposals page</td>
+            <td>Kristian</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>bannerFaq.jpg</td>
+            <td>Banner image for FAQ page</td>
+            <td>Kristian</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>bannerFm.jpg</td>
+            <td>Banner immage for for miners page</td>
+            <td>Kristian</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>footerLogo.png</td>
+            <td>Logo image used in the footer</td>
+            <td></td>
+            <td>EPRM Logo</td>
+        <tr>
+            <td>front-page-video.mp4</td>
+            <td>Video on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>icon-axe.png</td>
+            <td>Icon on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>icon-group.png</td>
+            <td>Icon on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>icon-work.png</td>
+            <td>Icon on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>news1.jpg</td>
+            <td>News article illustration image on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>news2.jpg</td>
+            <td>News article illustration image on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>news3.jpg</td>
+            <td>News article illustration image on front page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>logo0.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo1.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo2.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo3.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo4.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo5.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo6.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo7.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo8.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo9.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo10.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo11.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo12.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo13.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo14.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo15.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo16.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo17.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo18.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo19.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo20.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo21.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo22.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>logo23.jpg</td>
+            <td>simple company logo</td>
+            <td>Nicolai</td>
+            <td>Wikimedia</td>
+        <tr>
+            <td>excavationImg.jpg</td>
+            <td></td>
+            <td>Nicolai</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>gearsImg.jpg</td>
+            <td></td>
+            <td>Nicolai</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>miningSiteImg.jpg</td>
+            <td></td>
+            <td>Nicolai</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>MarketProgramme.jpg</td>
+            <td>Image for the "CAPAZ: The Passport to Markets Programme" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+
+            <td>blockchain.jpg</td>
+            <td>Image for the "Blockchain" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>default.jpg</td>
+            <td>Default image for the projects page</td>
+            <td>Line</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>incidentrep.jpg</td>
+            <td>Image for the "Incident Reporting" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>indonesia.png</td>
+            <td>Image for the "Indonesia" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>map.jpg</td>
+            <td>Default map for the projects page</td>
+            <td>Line</td>
+            <td>pinterest.com</td>
+        <tr>
+            <td>projectsBanner.jpg</td>
+            <td>Banner for the projects page</td>
+            <td>Line</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>responsibleK.jpg</td>
+            <td>Image for the "Responsible Kenyan Gold" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>the arts.jpg</td>
+            <td>Image for the "Ther Artisanal Mining" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>thecapaz.jpg</td>
+            <td>Image for the "The CAPAZ Passports to Markets project" article</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>ICMM.jpg</td>
+            <td>Default image for the news page</td>
+            <td>Line</td>
+            <td>europeanpartnership-responsibleminerals.eu</td>
+        <tr>
+            <td>newsBanner.jpg</td>
+            <td>Banner for the news page</td>
+            <td>Line</td>
+            <td>https://unsplash.com/</td>
+        <tr>
+            <td>aboutStyle.css</td>
+            <td>contains the styling that is specific for the about page</td>
+            <td>Nicolai</td>
+            <td></td>
+        <tr>
+            <td>mainStyle.css</td>
+            <td>Main style with general link and heading styles, and some parts that repeat on every page</td>
+            <td>Collaborative / Kristian</td>
+            <td></td>
+        <tr>
+            <td>style.css</td>
+            <td>Contains styles for the index page</td>
+            <td>Bram</td>
+            <td></td>
+        <tr>
+            <td>newsProjectStyle.css</td>
+            <td>Local css for the news and projects pages</td>
+            <td>Line</td>
+            <td></td>
+        <tr>
+            <td>africaMap.jpg</td>
+            <td>Map for africa related articles</td>
+            <td>Line</td>
+            <td>pinterest.com</td>
+        <tr>
+            <td>indonesiaMap.jpg</td>
+            <td>Map for indonesia related articles</td>
+            <td>Line</td>
+            <td>pinterest.com</td>
+        <tr>
+            <td>southAmMap.jpg</td>
+            <td>Map for south america reltated articles</td>
+            <td>Line</td>
+            <td>pinterest.com</td>
+        </table>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="changes">
+        <h2>Changes</h2>
+        <hr />
+        <h3>Changes to files/file structure</h3>
+        <ul>
+            <li>Added more specific CSS and JS files for each page/functionality, instead of just using one big one. This increases maintainability and readability. </li>
+            <li>Moved video file into same folder as the images</li>
+        </ul>
+        <h3>Changes in application.html</h3>
+        <ul>
+            <li>Added a transition for the background of the bars when you hover over them, to indicate that they are clickable. Also made the cursor change to pointer when you hover over the bars.</li>
+        </ul>
+        <h3>Changes in CallsForProposals.html</h3>
+        <ul>
+            <li>Visual design change on buttons, no longer a frame around the buttons, and the text fades in on hover</li>
+        </ul>
+        <h3>Changes in News.html</h3>
+        <ul>
+            <li>No image changing according to selected article due to lack of such images from our client. Using a single default image instead</li>
+            <li>No link to each individual newsletter on the web page as these will be sent as a pdf upon subscribing.</li>
+        </ul>
+        <h3>Changes to minimal requirements/ Javascript</h3>
+        <ul>
+            <li>Handling of buttons and button animations in CallsForProposals.html was done using Javascript</li>
+            <li>Used CSS to gray out and colour the Get Involved buttons when you hover over them instead of JavaScript. </li>
+        </ul>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="modularity">
+        <h2>How we reached modularity requirements</h2>
+        <hr />
+        <p>We used different JavaScript files to reach a modular website. The header.js and footer.js are used on all the different sites to include the navbar on the top of the page and the footer on the bottom of the page.</p>
+        <a href="#top">back to top</a>
+    </div>
+
+    <div id="minreq">
+        <h2>Minimum Requirements</h2>
+        <hr />
+        <p>Kristian fulfilled his minimum requirements by making the button handlers located in js/handlers.js, this minimum requirement was added after P2, see changes Section</p>
+        <p>Jonathan did all of his minimum requirements, but instead of using javascript to change the colour of the get involved buttons when you hover over them he used CSS.</p>
+        <p>Line fulfilled all minimum requirements of a calendar displaying the date at which an article was posted, an animated subscription bar, an interchanging map on the projects page and images changing based on the selected article.</p>
+        <a href="#top">back to top</a>
+    </div>
+</body>
+
+</html>
