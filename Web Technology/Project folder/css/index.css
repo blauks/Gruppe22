@@ -92,8 +92,6 @@ a:active {
   font-family: 'Raleway', serif;
   font-size: 24px;
   font-weight: bold;
-  
-  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -212,19 +210,49 @@ a:active {
 .partners-background img {
   width: 100%;
   height: auto;
-  z-index: -1;
+  z-index: 0;
 }
 
 .partner-logos {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 1%;
 }
 
 .partner-logos img {
-  display: inline-block;
+  position: absolute;
+  display: inline;
+  float: left;
   width: 100%;
+  bottom: 50%;
   height: auto;
+}
+  
+#logos-1 {
+  z-index: 1;
+}
+
+#logos-2 {
+  z-index: -1;
+}
+
+#logos-3 {
+  z-index: -1;
+}
+
+#next-button {
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  height: 15%;
+  z-index: 2;
+  border-radius: 15px;
+  padding: 0.5% 0;
+}
+
+#next-button:hover {
+  background-color: #C32323;
+  transition-duration: 0.4s;
 }
 
 @media only screen and (max-width: 1150px) {
