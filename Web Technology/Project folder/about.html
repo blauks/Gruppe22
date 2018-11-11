@@ -10,13 +10,16 @@
     <title>About the EPRM</title>
   </head>
   <body>
+    <!-- Navigation  -->
     <header id="head"></header>
+    <!-- banner -->
     <div class="bannerImg aboutBanner">
         <div class="bannerTitle">
             <div class="bannerText">About the <b>EPRM</b></div>
             <div class="bannerBlurry aboutBanner"></div>
         </div>
     </div>
+    <!-- button bar -->
     <div class="aboutContainer" id="buttonBarContainer">
       <div class="centralized" id="buttonBar">
         <a href="#aboutUs">
@@ -45,6 +48,7 @@
       </a>
         </div>
       </div>
+      <!-- About us section -->
     <div class="aboutContainer" id="aboutUsContainer">
       <div id="aboutUs">
         <div id="aboutUsMainStatement">
@@ -92,12 +96,14 @@
         </div>
       </div>
     </div>
+    <!-- purpose section -->
     <div class="aboutContainer" id="ourPurposeContainer">
       <div class="centralized" id="ourPurpose">
         <h2><u>Our purpose</u></h2>
         <p>European Partnership for Responsible Minerals is a multi-stakeholder partnership established with the goal to create better social and economic conditions for mine workers and local mining communities, by increasing the number of mines that adopt responsible mining practices in Conflict and High Risk Areas (CAHRAs).</p>
       </div>
     </div>
+    <!-- Structure section -->
     <div class="aboutContainer" id="ourStructureContainer">
       <br>
       <br>
@@ -105,19 +111,19 @@
         <div class="centralized" id="ourStructureControll">
             <h2>The Structure of the<br><b>EPRM</b></h2>
               <div class="centralized" id=structureButtonBar>
-                <div class="structureButton" onclick="structureDisplay(1);">
+                <div class="structureButton" onclick="structureDisplay(0);">
                   <h3>Supply chain</h3>
                   <i id="supplyChainButtonIcon" class="material-icons md-48">local_shipping</i>
                 </div>
-                <div class="structureButton" onclick="structureDisplay(2);">
+                <div class="structureButton" onclick="structureDisplay(1);">
                   <h3>Civil society</h3>
                   <i id="civilSocietyButtonIcon" class="material-icons md-48">location_city</i>
                 </div>
-                <div class="structureButton" onclick="structureDisplay(3);">
+                <div class="structureButton" onclick="structureDisplay(2);">
                   <h3>Institutions</h3>
                   <i id="GovernmentsAndInstitutionsButtonIcon" class="material-icons md-48">account_balance</i>
                 </div>
-                <div class="structureButton" onclick="structureDisplay(4);">
+                <div class="structureButton" onclick="structureDisplay(3);">
                   <h3>Observers</h3>
                   <i id="observersButtonIcon" class="material-icons md-48">visibility</i>
                 </div>
@@ -133,18 +139,19 @@
     </div>
     <br>
     <br>
+    <!-- member section -->
     <div class="aboutContainer" id="ourMembersContainer">
       <div class="centralized" id="ourMembers">
         <h2>Members of the <b>EPRM</b></h2>
         <div class="membersTitleContainer">
           <div class="membersTitle membersTitleLeft" >
-            <h3>Regular</h3>
+            <h3 id="membersTitle1" onmouseenter="membersTitleEnter(0);" onmouseout="membersTitleExit(0);"> Regular</h3>
           </div>
-          <div class="membersTitle">
-            <h3>Strategic</h3>
+          <div class="membersTitle" >
+            <h3 id="membersTitle2" onmouseenter="membersTitleEnter(1);" onmouseout="membersTitleExit(1);" > Strategic</h3>
           </div>
           <div class="membersTitle membersTitleRight">
-            <h3>Basic</h3>
+            <h3 id="membersTitle3" onmouseenter="membersTitleEnter(2);" onmouseout="membersTitleExit(2);">Basic</h3>
           </div>
         </div>
         <div class="topMembers" id="topMembers1">
@@ -157,16 +164,16 @@
         </div>
         <div class="membersTitleContainer">
           <div class="membersTitle membersTitleLeft">
-            <h3>Institutions</h3>
+            <h3 id="membersTitle4" onmouseenter="membersTitleEnter(3);" onmouseout="membersTitleExit(3);">  Institutions</h3>
           </div>
-          <div class="membersTitle">
-            <h3>Civil Society Actors</h3>
+          <div  class="membersTitle" >
+            <h3 id="membersTitle5" onmouseenter="membersTitleEnter(4);" onmouseout="membersTitleExit(4);"> Civil Society Actors</h3>
           </div>
-          <div class="membersTitle membersTitleRight">
-            <h3>Observers</h3>
+          <div  class="membersTitle membersTitleRight">
+            <h3 id="membersTitle6" onmouseenter="membersTitleEnter(5);" onmouseout="membersTitleExit(5);"> Observers</h3>
           </div>
           </div>
-        <div class="topMembers" id="topMembers2">
+          <div class="topMembers" id="topMembers2">
           <div class="members threeMembers">
           </div>
           <div class="members centerMembers">

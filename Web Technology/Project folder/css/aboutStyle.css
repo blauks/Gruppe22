@@ -1,8 +1,3 @@
-h4{
-  color:white;
-  font-family: open-sans;
-}
-
 .aboutContainer{
   overflow:auto;
   width:100%;
@@ -13,6 +8,7 @@ h4{
   margin-right: auto;
   margin: 0 auto;
 }
+
 
 /* Button bar */
 #buttonBarContainer{
@@ -50,7 +46,8 @@ h4{
   height:100%;
 }
 
-/*  */
+
+/* About text content */
 #aboutUsContainer{
   background-color:#E5E5E5;
   width:100%;
@@ -73,7 +70,8 @@ h4{
   overflow:auto;
 
 }
-/* purely for the mobile view */
+
+/* this img is purely for the mobile view */
 #howEPRMWorkMobileImage{
   display:none;
 }
@@ -113,6 +111,8 @@ h4{
   text-align:center;
 }
 
+
+/* Structure display/view */
 #ourStructureContainer{
   background-color:#E5E5E5;
 }
@@ -145,6 +145,9 @@ h4{
   color:gray;
   cursor:pointer;
 }
+.structureButton i{
+  transition: box-shadow 1s;
+}
 
 #ourStructureDisplay{
   overflow:auto;
@@ -153,11 +156,16 @@ h4{
   background-color: rgb(86, 204, 246);
 }
 
+
+
+/* members display */
 #ourMembersContainer{
   background-color:#FFFFFF;
 }
 
 #ourMembers{
+  user-select: none;
+  overflow:hidden;
   text-align:center;
   height:450px;
   background-color:#DCD9D9;
@@ -171,6 +179,12 @@ h4{
   width:33%;
   float:left;
   height:100%;
+}
+.membersTitle h3{
+  transition:color 0.5s;
+}
+.membersTitle h3:hover{
+  color:#C32323;
 }
 
 .topMembers{
@@ -195,6 +209,7 @@ h4{
 }
 
 .logoMembers{
+  transition:box-shadow 1s;
   position:relative;
   left:15%;
   height: 5vw;
@@ -206,6 +221,7 @@ h4{
   background-position: center;
   background-color: white;
   padding-bottom:0;
+
 }
 .logoMembers:hover{
   transition: box-shadow 0.5s;
@@ -231,37 +247,40 @@ h4{
 }
 
 
+/* changes in size for smaller devices */
+@media all and (max-width:900px){
+  .material-icons.md-48 { font-size: 40px }
+  #buttonBar a div h2{
+    font-size: 15px;
+  }
 
+  #ourStructureControll h2, #ourStructureDisplay h2{
+    font-size:25px;
+  }
 
-  @media all and (max-width:900px){
-    .material-icons.md-48 { font-size: 40px }
-    #buttonBar a div h2{
-      font-size: 15px;
-    }
-    #ourStructureControll h2, #ourStructureDisplay h2{
-      font-size:25px;
-    }
-    #ourStructureControll h3, #ourStructureDisplay p{
-      font-size:10px;
-    }
+  #ourStructureControll h3, #ourStructureDisplay p{
+    font-size:10px;
+  }
+
     .logoMembers{
       height: 50px;
       width: 50px;
       left:3%;
     }
+
     .membersTitle h3{
       font-size: 20px;
     }
-    @media all and (max-width:750px){
-      .logoMembers{
-        height:42px;
-        width:42px;
-        left:5%;
-      }
-      .membersTitle h3{
-        font-size: 16px;
-      }
+  @media all and (max-width:750px){
+    .logoMembers{
+      height:42px;
+      width:42px;
+      left:5%;
     }
+    .membersTitle h3{
+    font-size: 16px;
+    }
+}
 @media all and (max-width:750px){
   .logoMembers{
     height:35px;
@@ -273,26 +292,33 @@ h4{
     #buttonBar a div h2{
       font-size: 12px;
     }
+
     #howEPRMWorkMobileImage{
-    display:inline;
+      display:inline;
     }
+
     #howEPRMWorkDesktopImage{
-    display:none;
+      display:none;
     }
+
     #ourPurpose{
-    width:80%;
+      width:80%;
     }
+
     #aboutUsMainStatement{
-    width:90%;
+      width:90%;
     }
+
     #ourStructureControll, #ourStructureDisplay, #aboutUsContent div{
-    width:100%;
+      width:100%;
     }
+
     #ourStructureControll h2, #ourStructureDisplay h2{
-    font-size:25px;
+      font-size:25px;
     }
+
     #ourStructureControll h3, #ourStructureDisplay p{
-    font-size:10px;
+      font-size:10px;
     }
   }
 }
